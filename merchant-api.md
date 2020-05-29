@@ -1,5 +1,5 @@
 ---
-description: about merchant
+description: about merchant from git
 ---
 
 # Merchant API
