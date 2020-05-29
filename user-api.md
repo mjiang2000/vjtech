@@ -296,3 +296,109 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/user/addressbook" %}
+{% api-method-summary %}
+Upate address book
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+R
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request body
+
+```text
+{
+"address_book": [
+        {
+            "id": "a",
+            "full_name": "Jack Jiang",
+            "street_1": "4 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com",
+            "is_default": false
+        },
+        {
+            "id": "b",
+            "full_name": "Jack Jiang",
+            "street_1": "5 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com",
+            "is_default": false
+        },
+        {
+            "id": "c",
+            "full_name": "Jack Jiang",
+            "street_1": "6 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com",
+            "is_default": false
+        },
+        {
+            "id": "d",
+            "full_name": "Jack Jiang",
+            "street_1": "7 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com",
+            "is_default": false
+        },
+        {
+            "id": "e",
+            "full_name": "Jack Jiang",
+            "street_1": "8 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com",
+            "is_default": false
+        }
+    ]
+    }
+```
+
