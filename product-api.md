@@ -1,0 +1,212 @@
+# Product API
+
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/product/:bcin" %}
+{% api-method-summary %}
+Get a product
+{% endapi-method-summary %}
+
+{% api-method-description %}
+This endpoint allows you to get free cakes.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="bcin" type="string" required=true %}
+bcin aka product id
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Cake successfully retrieved.
+{% endapi-method-response-example-description %}
+
+```
+{
+    "merchant_id": "beeshop",
+    "merchant_name": "beeshop",
+    "sku": "B0369",
+    "stock_location": {
+        "aisle": "",
+        "bay": "",
+        "shelf": "",
+        "bin": ""
+    },
+    "selll_without_inventory": true,
+    "bcin": "9KBZJAL",
+    "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+    "brand": "Moritoku",
+    "media": [
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-01.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-01.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-01.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-01.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        },
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-02.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-02.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-02.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-02.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-02.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        },
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-03.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-03.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-03.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-03.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-03.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        },
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-05.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-05.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-05.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-05.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-05.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        },
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-04.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-04.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-04.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-04.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-04.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        }
+    ],
+    "language": "en",
+    "gtin": "4964549034550",
+    "categories": [
+        {
+            "product_category_id": "72",
+            "name": "Home and Kitchen",
+            "url": null,
+            "media": null,
+            "path": null,
+            "visible": false,
+            "sub_categories": null,
+            "depth": 0
+        }
+    ],
+    "active": true,
+    "unit": null,
+    "description": "TRADITIONAL AUTHENTIC STYLE: Our plate set features an authentic Japanese style.  Hand-crafted from thick, durable and restaurant-grade ceramic material.\nGreat tableware to serve your family and guests with. With these beautiful dishwares, your home cooked meals can feel like you are eating out at a fancy restaurant.\nMULTI-FUNCTIONAL: Designed to enhance the dining experience of Asian inspired foods (Thai curries, noodle dishes, dumplings, fried rice, stir fry, chow mein, laksa, etc). Use also for cereals, popcorn, oatmeal, etc.\nEASY TO CLEAN: Dishwasher-safe. Simply throw into the top rack of your dishwasher or scrub by hand",
+    "created_at": "2020-05-10T01:59:17.2561589Z",
+    "updated_at": "2020-05-27T20:01:19.7944375Z",
+    "tags": [
+        "Ceramic",
+        "Made in Japan",
+        "Moritoku",
+        "Noodle Soup",
+        "Plate",
+        "Plate Set"
+    ],
+    "specifications": [
+        {
+            "section_name": "General",
+            "properties": [
+                {
+                    "name": "Dishwasher",
+                    "value": " Safe"
+                },
+                {
+                    "name": " Product size",
+                    "value": " approximate 16.5cm diameter"
+                }
+            ]
+        }
+    ],
+    "created_by": "mjiang2000@gmail.com",
+    "updated_by": "mjiang2000@gmail.com",
+    "price": {
+        "currency": "CAD",
+        "list": 35.0,
+        "msrp": 35.0,
+        "cost": null
+    },
+    "weight": 1.425,
+    "id": "beeshop-9KBZJAL",
+    "document_type": "product_by_merchant",
+    "_etag": "\"2100d2b5-0000-0200-0000-5ecec70f0000\""
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Could not find a cake matching this query.
+{% endapi-method-response-example-description %}
+
+```
+9KBZJAL1 is not found.
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/productlist" %}
+{% api-method-summary %}
+Get a list of products
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="language" type="string" required=false %}
+en
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+paginate token
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="integer" required=false %}
+default 10
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchant\_id" type="string" required=false %}
+merchant id
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "has_more": true,
+    "continuation_token": "eyJ0b2tlbiI6IitSSUQ6fm53SUVBS3VOSzVrNkFRQUFBQUFBQUE9PSNSVDoxI1RSQzoxMDAjSVNWOjIjSUVPOjY1NTUxI0ZQQzpBZ0VBQUFBS0FERUJBUHhoUVA4SEVvQT0iLCJyYW5nZSI6eyJtaW4iOiIiLCJtYXgiOiJGRiJ9fQ==",
+    "results": [
+        {*product1},
+        {*product2}
+        ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
