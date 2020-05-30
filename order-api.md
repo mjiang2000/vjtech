@@ -300,7 +300,7 @@ Request body
 }
 ```
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Add shipping address
 {% endapi-method-summary %}
@@ -332,7 +332,7 @@ Add shipping address
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Add Notes
 {% endapi-method-summary %}
@@ -364,7 +364,7 @@ Add Notes
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Get a order
 {% endapi-method-summary %}
@@ -396,7 +396,7 @@ Get a order
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Get order list
 {% endapi-method-summary %}
@@ -428,7 +428,7 @@ Get order list
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="" path="" %}
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Order calculation
 {% endapi-method-summary %}
@@ -460,7 +460,7 @@ Order calculation
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Order validation
 {% endapi-method-summary %}
@@ -492,7 +492,7 @@ Order validation
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
 {% api-method-summary %}
 Get a Jielong summary
 {% endapi-method-summary %}
