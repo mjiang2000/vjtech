@@ -92,11 +92,11 @@ Request body
 
 ```text
 {
-        "bcin": "SAMUVRY",
+    "bcin": "SAMUVRY",
     "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
     "quantity": 1,
     "merchant_id": "beeshop",
-        "list_price": 10.0
+    "list_price": 10.0
 }
 ```
 
@@ -192,11 +192,11 @@ Request body
 
 ```text
 {
-        "bcin": "SAMUVRY",
+    "bcin": "SAMUVRY",
     "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
     "quantity": 1,
     "merchant_id": "beeshop",
-        "list_price": 10.0
+    "list_price": 10.0
 }
 ```
 
@@ -292,11 +292,11 @@ Request body
 
 ```text
 {
-        "bcin": "SAMUVRY",
+    "bcin": "SAMUVRY",
     "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
     "quantity": 1,
     "merchant_id": "beeshop",
-        "list_price": 10.0
+    "list_price": 10.0
 }
 ```
 
