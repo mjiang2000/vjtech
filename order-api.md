@@ -109,6 +109,7 @@ Update item in order
 
 {% endapi-method-description %}
 
+{% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
