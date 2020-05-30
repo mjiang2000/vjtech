@@ -188,6 +188,17 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-spec %}
 {% endapi-method %}
 
+Request body
+
+```text
+{
+		"bcin": "SAMUVRY",
+    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+    "quantity": 1,
+    "merchant_id": "beeshop",
+		"list_price": 10.0
+}
+
 {% api-method method="delete" host="" path="" %}
 {% api-method-summary %}
 Delete item in order
