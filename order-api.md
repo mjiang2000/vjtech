@@ -300,7 +300,7 @@ Request body
 }
 ```
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingaddress" %}
 {% api-method-summary %}
 Add shipping address
 {% endapi-method-summary %}
@@ -332,7 +332,7 @@ Add shipping address
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="order/note" %}
 {% api-method-summary %}
 Add Notes
 {% endapi-method-summary %}
@@ -396,7 +396,7 @@ Get a order
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/orderlist" %}
 {% api-method-summary %}
 Get order list
 {% endapi-method-summary %}
@@ -428,7 +428,7 @@ Get order list
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/calculation" %}
 {% api-method-summary %}
 Order calculation
 {% endapi-method-summary %}
@@ -460,41 +460,9 @@ Order calculation
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/validation" %}
 {% api-method-summary %}
 Order validation
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
-{% api-method-summary %}
-Get a Jielong summary
 {% endapi-method-summary %}
 
 {% api-method-description %}
