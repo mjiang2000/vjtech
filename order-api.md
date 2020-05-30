@@ -1,6 +1,6 @@
 # Order API
 
-{% api-method method="post" host="https://api.cakes.com" path="/v1/cakes/:id" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/v1/cakes/:id" %}
 {% api-method-summary %}
 Add item to order
 {% endapi-method-summary %}
