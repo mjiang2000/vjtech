@@ -1,6 +1,6 @@
 # Order API
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/item" %}
 {% api-method-summary %}
 Add item to order
 {% endapi-method-summary %}
@@ -11,11 +11,25 @@ Add item to order
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
-
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="new" type="string" required=false %}
+y/n. force to create a new order.
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="orderid" type="string" required=false %}
+order id. If order is is provided, jielong id can be ingore for better performance
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="jielongid" type="string" required=false %}
+jielong id. if order id is not generated, use jielong id to create a new order
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -31,6 +45,18 @@ Add item to order
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+Request body
+
+```text
+{
+		"bcin": "SAMUVRY",
+    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+    "quantity": 1,
+    "merchant_id": "beeshop",
+		"list_price": 10.0
+}
+```
 
 {% api-method method="put" host="" path="" %}
 {% api-method-summary %}
