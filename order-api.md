@@ -100,7 +100,7 @@ Request body
 }
 ```
 
-{% api-method method="put" host="" path="" %}
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/item" %}
 {% api-method-summary %}
 Update item in order
 {% endapi-method-summary %}
