@@ -619,16 +619,16 @@ Bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="new" type="string" required=false %}
-y/n. force to create a new order.
+{% api-method-parameter name="status" type="string" required=false %}
+new, submitted, shipped, cancelled
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
-order id. If order is is provided, jielong id can be ingore for better performance
+{% api-method-parameter name="page\_size" type="string" required=false %}
+10
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
-jielong id. if order id is not generated, use jielong id to create a new order
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+token
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -641,7 +641,12 @@ jielong id. if order id is not generated, use jielong id to create a new order
 
 ```text
 {
- *order
+    "has_more": false,
+    "continuation_token": null,
+    "results": [
+        *order,
+        *order
+    ]
 }
 ```
 {% endapi-method-response-example %}
