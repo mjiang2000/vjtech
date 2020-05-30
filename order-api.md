@@ -198,6 +198,7 @@ Request body
     "merchant_id": "beeshop",
 		"list_price": 10.0
 }
+```
 
 {% api-method method="delete" host="" path="" %}
 {% api-method-summary %}
