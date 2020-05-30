@@ -520,6 +520,16 @@ Submit an order
 
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=302 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
