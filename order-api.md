@@ -200,7 +200,7 @@ Request body
 }
 ```
 
-{% api-method method="delete" host="" path="" %}
+{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/item" %}
 {% api-method-summary %}
 Delete item in order
 {% endapi-method-summary %}
@@ -287,6 +287,18 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+Request body
+
+```text
+{
+		"bcin": "SAMUVRY",
+    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+    "quantity": 1,
+    "merchant_id": "beeshop",
+		"list_price": 10.0
+}
+```
 
 {% api-method method="post" host="" path="" %}
 {% api-method-summary %}
