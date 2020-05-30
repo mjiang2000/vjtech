@@ -388,35 +388,6 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-spec %}
 {% endapi-method %}
 
-Request body
-
-```text
-{
-		"shipping_address":{
-            "full_name": "Jack Jiang",
-            "street_1": "8 Danbury court",
-            "street_2": null,
-            "city": "Markham",
-            "country": "Canada",
-            "province": "ON",
-            "postal_code": "L3R7S1",
-            "phone": "416-2728539",
-            "email": "mjiang2000@hotmail.com"
-        },
-        "billing_address":{
-            "full_name": "Jack Jiang",
-            "street_1": "8 Danbury court",
-            "street_2": null,
-            "city": "Markham",
-            "country": "Canada",
-            "province": "ON",
-            "postal_code": "L3R7S1",
-            "phone": "416-2728539",
-            "email": "mjiang2000@hotmail.com"
-        }
-}
-```
-
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="order/note" %}
 {% api-method-summary %}
 Add Notes
