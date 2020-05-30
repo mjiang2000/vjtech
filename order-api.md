@@ -513,7 +513,7 @@ Request body
 }
 ```
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order" %}
 {% api-method-summary %}
 Get a order
 {% endapi-method-summary %}
