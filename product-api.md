@@ -713,7 +713,7 @@ supported image format : jpg, png and gif
 
 {% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:productId/image" %}
 {% api-method-summary %}
-
+Delete an image
 {% endapi-method-summary %}
 
 {% api-method-description %}
