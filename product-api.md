@@ -392,7 +392,7 @@ Request Body
     "selll_without_inventory": true,
     "title": "Made in Japan / Moritoku Traditional Japanese Hand Crafted Ceramic Rice Bowl (Lucky Plant 5-piece set)",
     "brand": "Moritoku",
-    "language": "en",
+    "language": "en", //only support en for now
     "gtin": "4964549034598",
     "active": true,
     "unit": null,
@@ -646,8 +646,14 @@ Upload a new image
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="file" type="object" required=false %}
+{% api-method-parameter name="file" type="object" required=true %}
 supported image format : jpg, png and gif
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
@@ -704,4 +710,91 @@ supported image format : jpg, png and gif
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:productId/image" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="productId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="url" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+https://bc01dmedia.blob.core.windows.net/product-image/JH8QRQ2-4964549034598-01.jpg
+https://bc01dmedia.blob.core.windows.net/product-image-t/JH8QRQ2-4964549034598-01.jpg
+https://bc01dmedia.blob.core.windows.net/product-image-s/JH8QRQ2-4964549034598-01.jpg
+https://bc01dmedia.blob.core.windows.net/product-image-m/JH8QRQ2-4964549034598-01.jpg
+https://bc01dmedia.blob.core.windows.net/product-image-l/JH8QRQ2-4964549034598-01.jpg
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+```text
+url=https://bc01dmedia.blob.core.windows.net/product-image/JH8QRQ2-4964549034598-01.jpg
+```
 
