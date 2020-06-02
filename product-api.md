@@ -441,6 +441,19 @@ Update a existing product
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="skipmedia" type="string" required=false %}
+y / n   
+y: image information will be reserved  
+n: image information will be reset  
+default is y
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="language" type="string" required=false %}
+en \(default\)
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -612,5 +625,83 @@ Request body
 }
 ```
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:productId/image" %}
+{% api-method-summary %}
+Upload a new image
+{% endapi-method-summary %}
 
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="productId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="file" type="object" required=false %}
+supported image format : jpg, png and gif
+{% endapi-method-parameter %}
+{% endapi-method-form-data-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+    {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/JH8QRQ2-4964549034598-01.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/JH8QRQ2-4964549034598-01.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/JH8QRQ2-4964549034598-01.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/JH8QRQ2-4964549034598-01.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/JH8QRQ2-4964549034598-01.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        }
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
