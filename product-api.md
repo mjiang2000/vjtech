@@ -208,5 +208,82 @@ merchant id
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="merchant/:merchantId/product" %}
+{% api-method-summary %}
+Create a new product
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+merchant id 
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+```text
+{
+    "sku": "B1326",
+    "stock_location": {
+        "aisle": "",
+        "bay": "",
+        "shelf": "",
+        "bin": ""
+    },
+    "selll_without_inventory": true,
+    "title": "Made in Japan / Moritoku Traditional Japanese Hand Crafted Ceramic Rice Bowl (Lucky Plant 5-piece set)",
+    "brand": "Moritoku",
+    "language": "en",
+    "gtin": "4964549034598",
+    "active": true,
+    "unit": null,
+    "description": "Besides using it as rice bowl, you can also use it for ice cream, snacks or whatever strikes your fancy\nMade of high quality ceramic and hand painted with traditional Japanese Plant which represents beauty, life and tranquility. The bowls are dishwasher and microwave safe\nThis traditionally crafted ceramic set will fit right in with any home decor with zen elements\nComes with easy packed gift box, a wonderful gift idea. These bowls makes a perfect gift item for house warming, birthdays, wedding, graduation, business gift or almost any occasion.",
+    "tags": [
+        "Ceramic",
+        "Hand Crafted",
+        "Made in Japan",
+        "Moritoku",
+        "Rice Bowl",
+        "Rice Bowl Set"
+    ],
+    "price": {
+        "currency": "CAD",
+        "list": 33,
+        "msrp": 33,
+        "cost": null
+    },
+    "weight": 1.32,
+}
+```
+
+
+
 
 
