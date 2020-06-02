@@ -450,6 +450,138 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "merchant_id": "beeshop",
+    "merchant_name": "beeshop",
+    "sku": "B1326",
+    "stock_location": {
+        "aisle": "",
+        "bay": "",
+        "shelf": "",
+        "bin": ""
+    },
+    "selll_without_inventory": true,
+    "bcin": "JH8QRQ2",
+    "title": "Made in Japan / Moritoku Traditional Japanese Hand Crafted Ceramic Rice Bowl (Lucky Plant 5-piece set)",
+    "brand": "Moritoku",
+    "media": [
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/JH8QRQ2-4964549034598-01.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/JH8QRQ2-4964549034598-01.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/JH8QRQ2-4964549034598-01.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/JH8QRQ2-4964549034598-01.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/JH8QRQ2-4964549034598-01.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        },
+        {
+            "url": "https://bc01dmedia.blob.core.windows.net/product-image/JH8QRQ2-4964549034598-02.jpg",
+            "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/JH8QRQ2-4964549034598-02.jpg",
+            "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/JH8QRQ2-4964549034598-02.jpg",
+            "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/JH8QRQ2-4964549034598-02.jpg",
+            "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/JH8QRQ2-4964549034598-02.jpg",
+            "type": "image/jpeg",
+            "order": 9999
+        }
+    ],
+    "language": "en",
+    "gtin": "4964549034598",
+    "categories": [
+        {
+            "product_category_id": "72",
+            "name": "Home and Kitchen",
+            "url": null,
+            "media": null,
+            "path": null,
+            "visible": false,
+            "sub_categories": null,
+            "depth": 0
+        }
+    ],
+    "active": true,
+    "unit": null,
+    "description": "Besides using it as rice bowl, you can also use it for ice cream, snacks or whatever strikes your fancy\nMade of high quality ceramic and hand painted with traditional Japanese Plant which represents beauty, life and tranquility. The bowls are dishwasher and microwave safe\nThis traditionally crafted ceramic set will fit right in with any home decor with zen elements\nComes with easy packed gift box, a wonderful gift idea. These bowls makes a perfect gift item for house warming, birthdays, wedding, graduation, business gift or almost any occasion.",
+    "created_at": "2020-05-10T01:59:18.2552261Z",
+    "updated_at": "2020-05-27T20:01:20.2863528Z",
+    "tags": [
+        "Ceramic",
+        "Hand Crafted",
+        "Made in Japan",
+        "Moritoku",
+        "Rice Bowl",
+        "Rice Bowl Set"
+    ],
+    "specifications": [
+        {
+            "section_name": "General",
+            "properties": [
+                {
+                    "name": "Dishwasher",
+                    "value": " Safe"
+                },
+                {
+                    "name": " Product size",
+                    "value": " approximate 4.5 inches diameter and 2.5 inches tall"
+                }
+            ]
+        }
+    ],
+    "created_by": "mjiang2000@gmail.com",
+    "updated_by": "mjiang2000@gmail.com",
+    "price": {
+        "currency": "CAD",
+        "list": 33,
+        "msrp": 33,
+        "cost": null
+    },
+    "weight": 1.32,
+    "id": "beeshop-JH8QRQ2",
+    "document_type": "product_by_merchant",
+    "_etag": "\"2100d6b5-0000-0200-0000-5ecec7100000\"",
+    "_rid": "yVctAP1cTtWFAgAAAAAAAA==",
+    "_self": "dbs/yVctAA==/colls/yVctAP1cTtU=/docs/yVctAP1cTtWFAgAAAAAAAA==/",
+    "_attachments": "attachments/",
+    "_ts": 1590609680
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
@@ -461,6 +593,7 @@ Request body
 
 ```text
 {
+  "bcin":"JH8QRQ2"
 	"title": "Jack - Oil Dispenser, White 123",
 	"description": "Description: Oil Dispenser, White",
 	"brand": "Cuisipro",
