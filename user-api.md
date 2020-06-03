@@ -127,21 +127,22 @@ successful login
 
 ```
 {
-    "merchant_list": [
+   "merchant_list": [
         {
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
+            "merchant_type": "wholesale",
             "roles": [
                 "admin"
-            ],
-            "user_id": "mjiang2000@gmail.com",
-            "given_name": "Min",
-            "family_name": "Jiang",
-            "name": null,
-            "email": "mjiang2000@gmail.com",
-            "id": "67d2bcf9-8e71-4099-af90-367a0bc458ac",
-            "document_type": "user_by_merchant",
-            "_etag": "\"2e027369-0000-0200-0000-5eb84d190000\""
+            ]
+        },
+        {
+            "merchant_id": "secondMerchant",
+            "merchant_name": "Second Merchant",
+            "merchant_type": "wholesale",
+            "roles": [
+                "admin"
+            ]
         }
     ],
     "merchant_flag": true,
