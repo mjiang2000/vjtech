@@ -39,15 +39,15 @@ successfully login
             "merchant_type": "wholesale",
             "roles": [
                 "admin"
-            ],
-            "user_id": "mjiang2000@hotmail.com",
-            "given_name": null,
-            "family_name": null,
-            "name": null,
-            "email": "mjiang2000@hotmail.com",
-            "id": "13ec185f-368d-4e6e-a55b-e0f56eb2f56b",
-            "document_type": "user_by_merchant",
-            "_etag": "\"f7007595-0000-0200-0000-5ec6ec580000\""
+            ]
+        },
+        {
+            "merchant_id": "secondMerchant",
+            "merchant_name": "Second Merchant",
+            "merchant_type": "wholesale",
+            "roles": [
+                "admin"
+            ]
         }
     ],
     "merchant_flag": true,
