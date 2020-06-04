@@ -30,7 +30,7 @@ Merchant API
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "id": "3be9942d-6063-4bc2-8e7b-2736a7ebfc5f",
     "merchant_id": "ZEMBC",
@@ -54,7 +54,7 @@ Merchant API
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 "{user Id} is already a owner of merchant."
 ```
 {% endapi-method-response-example %}
@@ -64,7 +64,7 @@ Merchant API
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -76,7 +76,7 @@ Request body
 
 ```text
 {
-	"merchant_name": "mjiang2000@gmail.com"
+    "merchant_name": "mjiang2000@gmail.com"
 }
 ```
 
@@ -110,7 +110,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -120,7 +120,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -130,7 +130,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -181,7 +181,7 @@ merchant id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -191,7 +191,7 @@ merchant id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -201,7 +201,7 @@ merchant id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -233,8 +233,39 @@ merchant id
 
 {% endapi-method-response-example-description %}
 
-```
-
+```text
+{
+    "merchant_type": "wholesale",
+    "merchant_id": "beeshop",
+    "merchant_name": "Beeshop",
+    "owner_id": null,
+    "authorized_micro_merchant": false,
+    "logo": null,
+    "language": "en",
+    "support_email": null,
+    "support_phone": null,
+    "order_process_notification_email": null,
+    "pick_list_notification_email": null,
+    "payout_notification_email": null,
+    "theme_color": null,
+    "menu_background_color": null,
+    "menu_font_color": null,
+    "pay_period": 0,
+    "return_policy": null,
+    "banner_background_color": null,
+    "banner_logo": null,
+    "banner_background_image": null,
+    "square_banner": null,
+    "square_logo": null,
+    "overview": null,
+    "one_line_marketing_promotion_text": null,
+    "active": false,
+    "merchant_category_id": null,
+    "banner_font_color": null,
+    "id": "merchant",
+    "document_type": "merchant",
+    "_etag": "\"d3008e33-0000-0200-0000-5ec6ec770000\""
+}
 ```
 {% endapi-method-response-example %}
 
@@ -243,7 +274,7 @@ merchant id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -253,7 +284,7 @@ merchant id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
