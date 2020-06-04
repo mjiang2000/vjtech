@@ -25,58 +25,7 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{
-    "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
-    "supplier_merchant_id": "beeshop",
-    "merchant_name": "beeshop",
-    "micro_merchant_id": "ZEMBC",
-    "listed_products": [
-        {
-            "bcin": "SAMUVRY",
-            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-            "language": "en",
-            "merchant_id": "beeshop",
-            "merchant_name": "beeshop",
-            "sku": "MT-AC-01",
-            "price": {
-                "currency": "CAD",
-                "list": 10,
-                "msrp": 10,
-                "cost": null
-            },
-            "listed_by": "mjiang2000@gmail.com",
-            "listed_at": "2020-05-22T13:26:19.0342926Z",
-            "stay_on_top": false
-        },
-        {
-            "bcin": "9KBZJAL",
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "language": "en",
-            "merchant_id": "beeshop",
-            "merchant_name": "beeshop",
-            "sku": "B0369",
-            "price": {
-                "currency": "CAD",
-                "list": 35,
-                "msrp": 35,
-                "cost": null
-            },
-            "listed_by": "mjiang2000@gmail.com",
-            "listed_at": "2020-05-22T13:26:19.034294Z",
-            "stay_on_top": false
-        }
-    ],
-    "name": null,
-    "description": null,
-    "shipping_address": null,
-    "billing_address": null,
-    "status": "closed",
-    "start_date": "2020-05-21T00:00:00Z",
-    "end_date": "2020-05-25T16:33:27.2971201Z",
-    "bc_pay_enabled": false,
-    "id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
-    "document_type": "jielong"
-}
+{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
 ```
 {% endapi-method-response-example %}
 
@@ -106,7 +55,7 @@ Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```
-
+{    "message": "Ain't no cake like that."}
 ```
 {% endapi-method-response-example %}
 
