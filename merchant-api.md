@@ -340,7 +340,10 @@ opened\(default\), closed, cancelled
 {
     "has_more": false,
     "continuation_token": null,
-    "results": []
+    "results": [
+        *jielong1,
+        *jielong2
+    ]
 }
 ```
 {% endapi-method-response-example %}
