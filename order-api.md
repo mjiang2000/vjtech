@@ -989,6 +989,81 @@ the order to be amend
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
+    "order_amendment_id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
+    "order_id": "577b066f-a30f-40a4-8951-077e2af1dadf",
+    "user_id": "mjiang2000@gmail.com",
+    "jielong_id": "ce59a172-41b9-4cef-9243-ce777cdf418d",
+    "email": null,
+    "merchant_id": "beeshop",
+    "merchant_name": "Beeshop",
+    "line_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": null,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "weight": 0
+        }
+    ],
+    "base_amount": 10,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
+    "shipping_amount": 0,
+    "total_amount": 10,
+    "created_at": "2020-06-08T02:55:38.9553867Z",
+    "updated_at": "2020-06-08T02:55:41.2548526Z",
+    "status": "new",
+    "refund_id": null,
+    "order_number": "BSC20-40",
+    "amended_by": "mjiang2000@gmail.com",
+    "document_type": "order_amendment"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+Invalid Input
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
