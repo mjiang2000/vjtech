@@ -237,6 +237,12 @@ Query Payment status
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -298,4 +304,106 @@ Query Payment status
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/payment/v1" path="/refund/micromerchant/{microMerchantId}" %}
+{% api-method-summary %}
+Refund
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Refund can only be executed as a micro merchant who own's the Campaign
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="microMerchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "refund_id": "61cc6a13-9d8d-48e5-b55e-a14f23e04b7d",
+    "refund_gateway": "Spreedly",
+    "refund_provider": "VISA",
+    "external_refund_id": "CAXS8rG7pAB8eEY3QRDO1tTxBxz",
+    "total_amount": 0.01,
+    "currency": "CAD",
+    "order_id": "577b066f-a30f-40a4-8951-077e2af1dadf",
+    "order_amendment_id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
+    "status": "succeeded",
+    "updated_at": "2020-06-08T02:57:40.8192629Z",
+    "extra_info_from_gateway": null,
+    "original_payment_id": "0fdb1f3c-916e-4f67-a0f8-7f6353d7ac4d",
+    "original_external_payment_id": "kbDECr7Wbcn3EERO1nZxWatLDs",
+    "description": "refund",
+    "external_transaction_settle_time": "2020-06-08T02:58:08Z",
+    "id": "7851a7a9-2c2d-49d6-8ce8-228b69d1de42",
+    "document_type": "refund"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+* Order amendment have to be generated before the refund can be process. 
+* Micro merchant response for creating an order amendment up on request by the jielong user
+* Successful refund will mark the order amendment as refunded
+
+```text
+{
+    "order_id":"577b066f-a30f-40a4-8951-077e2af1dadf",
+    "order_amendment_id":"4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
+    "total_amount":0.01,
+    "currency":"CAD",
+    "description":"refund"
+ }
+```
 
