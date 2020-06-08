@@ -964,7 +964,7 @@ Amend an item in order
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Amend an jielong order after the payment is made by the customer user
 {% endapi-method-description %}
 
 {% api-method-spec %}
