@@ -958,3 +958,133 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/amendment/item" %}
+{% api-method-summary %}
+Amend an item in order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="orderId" type="string" required=true %}
+the order to be amend
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
+    "order_amendment_id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
+    "order_id": "577b066f-a30f-40a4-8951-077e2af1dadf",
+    "user_id": "mjiang2000@gmail.com",
+    "jielong_id": "ce59a172-41b9-4cef-9243-ce777cdf418d",
+    "email": null,
+    "merchant_id": "beeshop",
+    "merchant_name": "Beeshop",
+    "line_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": null,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "weight": 0
+        }
+    ],
+    "base_amount": 10,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
+    "shipping_amount": 0,
+    "total_amount": 10,
+    "created_at": "2020-06-08T02:55:38.9553867Z",
+    "updated_at": "2020-06-08T02:55:41.2548526Z",
+    "status": "new",
+    "refund_id": null,
+    "order_number": "BSC20-40",
+    "amended_by": "mjiang2000@gmail.com",
+    "document_type": "order_amendment"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+Invalid Input
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+* the quantity is the number that changed to. For example, the original number is 5, it can be changed to 3, which means refund 2 items. As a result, 2 will be persisted in the order amendment for this item.
+* One order amendment can contain multiple items
+* The order amendment must be refund successfully to be consider in the campaign close action
+* One order can have multiple amendments, the GUI should avoid guiding user creating multiple amendments. Unless in scenario that extract amendment is required when previous amendment has completed refund process. 
+
+```text
+{
+		"bcin": "SAMUVRY",
+    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+    "quantity": 1,
+    "merchant_id": "beeshop",
+		"list_price": 10.0
+}
+```
+
