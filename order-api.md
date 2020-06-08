@@ -958,3 +958,58 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/amendment/item" %}
+{% api-method-summary %}
+Amend an item in order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="orderId" type="string" required=false %}
+the order to be amend
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+* the quantity is the number that changed to. For example, the original number is 5, it can be changed to 3, which means refund 2 items. As a result, 2 will be persisted in the order amendment for this item.
+* One order amendment can contain multiple items
+* The order amendment must be refund successfully to be consider in the campaign close action
+* One order can have multiple amendments, the GUI should avoid guiding user creating multiple amendments. Unless in scenario that extract amendment is required when previous amendment has completed refund process. 
+
+```text
+{
+		"bcin": "SAMUVRY",
+    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+    "quantity": 1,
+    "merchant_id": "beeshop",
+		"list_price": 10.0
+}
+```
+
