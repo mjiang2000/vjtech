@@ -4,7 +4,7 @@ description: Payment API
 
 # Payment API
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/payment/v1" path="/pay" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/payment/v1" path="/pay" %}
 {% api-method-summary %}
 Pay 
 {% endapi-method-summary %}
@@ -112,5 +112,68 @@ By CC number, through Moneris
  }
 ```
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/payment/v1" path="/pay/prepare" %}
+{% api-method-summary %}
+Prepare Pay
+{% endapi-method-summary %}
 
+{% api-method-description %}
+Pay through 3rd party payment by redirect to the payment provider's web pages or SDK  
+1\)Wechat pay \(mobile only\)  
+2\)Alipay \(mobile and web\)  
+3\)Unionpay \(web only\)  
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request body
+
+By web
+
+```text
+{
+	"order_id":"20200608-01D2-4F0F-96E2-4CFCCAA8B823",
+    "payment_provider":"ALIPAY",
+    "total_amount":0.01,
+    "currency":"CAD",
+    "description":"test",
+    "device_type": "web",
+    "return_url": "http://example.com"
+}
+```
+
+By Mobile
+
+```text
+{
+	"order_id":"20200608-01D2-4F0F-96E2-4CFCCAA8B823",
+    "payment_provider":"ALIPAY",
+    "total_amount":0.01,
+    "currency":"CAD",
+    "description":"test",
+    "device_type": "mobile",
+    "return_url": "http://example.com"
+}
+```
 
