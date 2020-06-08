@@ -6,5 +6,6 @@
 * [Product API](product-api.md)
 * [Jielong API](jielong-api.md)
 * [Order API](order-api.md)
+* [Payment API](payment-api.md)
 * [Management API](management-api.md)
 
