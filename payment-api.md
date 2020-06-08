@@ -217,3 +217,85 @@ By Mobile
 }
 ```
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/payment/v1" path="/pay/status/order/{orderId}/payment/{orderPaymentId}" %}
+{% api-method-summary %}
+Query Payment status
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="orderPaymentId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="orderId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "payment_id": "0fdb1f3c-916e-4f67-a0f8-7f6353d7ac4d",
+    "payment_gateway": "Spreedly",
+    "payment_provider": "VISA",
+    "external_payment_id": "kbDECr7Wbcn3EERO1nZxWatLDs",
+    "total_amount": 0.01,
+    "currency": "CAD",
+    "order_id": "577b066f-a30f-40a4-8951-077e2af1dadf",
+    "status": "succeeded",
+    "updated_at": "2020-06-08T02:38:44.5920924Z",
+    "extra_info_from_gateway": "411111 - 1111",
+    "gateway_type": "test",
+    "trans_id": null,
+    "external_transaction_settle_time": "2020-06-08T02:38:44Z",
+    "id": "1b0b5ddb-ca6f-4648-b5a7-3daa9e2ef805",
+    "document_type": "payment"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
