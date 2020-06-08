@@ -140,6 +140,46 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "order_payment_id": "998fa09c-683e-4bba-a95a-9a15d3747fd8",
+    "order_id": "20200608-01D2-4F0F-96E2-4CFCCAA8B823",
+    "payment_provider": "ALIPAY",
+    "total_amount": 0.01,
+    "currency": "CAD",
+    "description": "test",
+    "external_payment_id": "TA120000571200608000002",
+    "payment_token": "_input_charset=\"utf-8\"&appenv=\"null\"&currency=\"CAD\"&forex_biz=\"FP\"&notify_url=\"https://pbs.snappay.ca/api/alipay/notice/\"&out_trade_no=\"TA120000571200608000002\"&partner=\"2088821431374179\"&payment_type=\"1\"&product_code=\"NEW_WAP_OVERSEAS_SELLER\"&refer_url=\"http://example.com\"&secondary_merchant_id=\"902000057124\"&secondary_merchant_industry=\"7299\"&secondary_merchant_name=\"Beeshop Solutions Inc\"&seller_id=\"2088821431374179\"&service=\"mobile.securitypay.pay\"&subject=\"order:20200608-01D2-4F0F-96E2-4CFCCAA8B823\"&total_fee=\"0.01\"&sign=\"RO7olR1TNuzOz1U90BWz92sfjlKTieHtXG9gjzSCkVn7I7fACcBhEwCMiBX4rGekALb0A%2FXgjDf5qDLSQKDVz7ztgX4taRXgrSOMnzfjeGTWDojgu8dnNgfeF45HOKsjKPLs6F4T5NYdUc7aRWHo7Sn%2BjQyQucM6EYZVrdWxkEM%3D\"&sign_type=\"RSA\"",
+    "second_payment_token": null
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+Invalid input
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
