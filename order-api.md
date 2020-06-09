@@ -570,7 +570,7 @@ Request body
 
 ```text
 {
-   "notes":""
+   "notes":"This is a note to the group owner"
 }
 ```
 
