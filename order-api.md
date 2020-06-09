@@ -40,68 +40,7 @@ jielong id. if order id is not generated, use jielong id to create a new order
 
 ```text
 {
-    "order_id": "5ceddfdf-a57b-4d5c-b3ff-c92088cf09d3",
-    "user_id": "mjiang2000@gmail.com",
-    "jielong_id": "10099ea5-13de-4ce6-9d0e-5d91c95f871c",
-    "email": null,
-    "micro_merchant_id": "ZEMBC",
-    "merchant_id": "beeshop",
-    "merchant_name": "Beeshop",
-    "line_items": [
-        {
-            "bcin": "SAMUVRY",
-            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-            "quantity": 5,
-            "image_url": null,
-            "list_price": 10,
-            "sale_price": null,
-            "merchant_id": "beeshop"
-         }
-    ],
-    "base_amount": 50,
-    "shipping_method": null,
-    "shipping_method_name": null,
-    "shipping_method_description": null,
-    "shipping_amount": 0,
-    "total_amount": 50,
-    "billing_address": {
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "full_name": "Jack Jiang",
-        "street_1": "8 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "ON",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com"
-    },
-    "shipping_address": {
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "full_name": "Jack Jiang",
-        "street_1": "8 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "ON",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com"
-    },
-    "created_at": "2020-06-08T20:09:08.5787054Z",
-    "updated_at": "2020-06-08T20:09:30.3523922Z",
-    "status": "submitted",
-    "payment_id": "bc01f40f-da0a-4440-853f-3362203959b3",
-    "order_number": "BSC20-52",
-    "notes": null,
-    "bc_pay_enabled": true,
-    "refunded": true,
-    "id": "5ceddfdf-a57b-4d5c-b3ff-c92088cf09d3",
-    "document_type": "order"
+ *order
 }
 ```
 {% endapi-method-response-example %}
@@ -570,7 +509,7 @@ Request body
 
 ```text
 {
-   "notes":"This is a note to the group owner"
+   "notes":""
 }
 ```
 

@@ -394,7 +394,7 @@ Bearer token
 Request Body
 
 * Order amendment have to be generated before the refund can be process. 
-* Micro merchant is response for creating an order amendment up on request by the jielong user
+* Micro merchant is responsible for creating an order amendment up on request by the customer user
 * Successful refund will mark the order amendment as refunded
 * Only Beeshop pay enabled order can be refund
 
