@@ -22,11 +22,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -122,11 +122,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -222,11 +222,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -322,11 +322,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -439,11 +439,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -535,11 +535,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -716,11 +716,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -804,11 +804,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -892,11 +892,11 @@ Bearer token
 y/n. force to create a new order.
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="orderid" type="string" required=false %}
+{% api-method-parameter name="order_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="jielongid" type="string" required=false %}
+{% api-method-parameter name="jielong_id" type="string" required=false %}
 jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
@@ -976,7 +976,7 @@ Bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="orderId" type="string" required=true %}
+{% api-method-parameter name="order_id" type="string" required=true %}
 the order to be amend
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
