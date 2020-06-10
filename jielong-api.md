@@ -932,13 +932,104 @@ Bearer token
 
 ```
 {
-    "has_more": false,
-    "continuation_token": null,
-    "results": [
-        *order1,
-        *order2,
-        ...
-    ]
+    "id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
+    "jielong_id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
+    "supplier_merchant_id": "beeshop",
+    "supplier_merchant_name": null,
+    "micro_merchant_id": "ZEMBC",
+    "listed_products": [
+        {
+            "bcin": "9KBZJAL",
+            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set) jack",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-02.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-02.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-02.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-02.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-02.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-03.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-03.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-03.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-03.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-03.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-05.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-05.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-05.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-05.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-05.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-04.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-04.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-04.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-04.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-04.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "beeshop",
+            "sku": "B0369",
+            "price": {
+                "currency": "CAD",
+                "list": 35,
+                "msrp": 35,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-06-09T23:40:47.8726322Z",
+            "stay_on_top": false
+        },
+        {
+            "bcin": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "sku": "MT-AC-01",
+            "price": {
+                "currency": "CAD",
+                "list": 10,
+                "msrp": 10,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-06-09T23:40:47.8726332Z",
+            "stay_on_top": false
+        }
+    ],
+    "name": "Jack Jielong 2",
+    "description": null,
+    "shipping_address": null,
+    "billing_address": null,
+    "status": "opened",
+    "start_date": "2020-06-09T00:00:00Z",
+    "end_date": "2020-06-30T00:00:00",
+    "bc_pay_enabled": true,
+    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/d610e2ba-1f5e-49d9-8c65-308fab26b497-groupby.jpg",
+    "document_type": "jielong"
 }
 ```
 {% endapi-method-response-example %}
@@ -968,5 +1059,12 @@ Bearer token
 
 ```text
 Content-Type: multipart/form-data
+
+Response jielong object will have url link
+{
+...
+"image": "https://bc01dmedia.blob.core.windows.net/jielong-image/d610e2ba-1f5e-49d9-8c65-308fab26b497-groupby.jpg",
+...
+}
 ```
 
