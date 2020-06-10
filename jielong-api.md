@@ -1148,3 +1148,125 @@ submitted \(default\)
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/ordersummarylist" %}
+{% api-method-summary %}
+Get a list of Jielong order summaries
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="jielongId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="status" type="string" required=false %}
+submitted \(default\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="string" required=false %}
+10 \(default\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "has_more": false,
+    "continuation_token": null,
+    "results": [
+         {
+            "order_id": "5ceddfdf-a57b-4d5c-b3ff-c92088cf09d3",
+            "user_id": "mjiang2000@gmail.com",
+            "jielong_id": "10099ea5-13de-4ce6-9d0e-5d91c95f871c",
+            "group_id": null,
+            "email": null,
+            "line_items": [
+                {
+                    "bcin": "SAMUVRY",
+                    "sku": null,
+                    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+                    "quantity": 5,
+                    "image_url": null,
+                    "list_price": 10.0,
+                    "sale_price": null,
+                    "merchant_id": "beeshop",
+                    "weight": 0.0
+                }
+            ],
+            "created_at": "2020-06-08T20:09:08.5787054Z",
+            "status": "submitted",
+            "order_number": "BSC20-52"
+        },
+        {
+            "order_id": "c56705ea-fe0d-4366-aeb8-c8ae3b303535",
+            "user_id": "mjiang2000@hotmail.com",
+            "jielong_id": "10099ea5-13de-4ce6-9d0e-5d91c95f871c",
+            "group_id": null,
+            "email": null,
+            "line_items": [
+                {
+                    "bcin": "SAMUVRY",
+                    "sku": null,
+                    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+                    "quantity": 5,
+                    "image_url": null,
+                    "list_price": 10.0,
+                    "sale_price": null,
+                    "merchant_id": "beeshop",
+                    "weight": 0.0
+                }
+            ],
+            "created_at": "2020-06-08T20:10:46.9539363Z",
+            "status": "submitted",
+            "order_number": "BSC20-56"
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
