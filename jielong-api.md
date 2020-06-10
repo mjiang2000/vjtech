@@ -25,7 +25,58 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{    "name": "Cake's name",    "recipe": "Cake's recipe name",    "cake": "Binary cake"}
+{
+    "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
+    "supplier_merchant_id": "beeshop",
+    "merchant_name": "beeshop",
+    "micro_merchant_id": "ZEMBC",
+    "listed_products": [
+        {
+            "bcin": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "beeshop",
+            "sku": "MT-AC-01",
+            "price": {
+                "currency": "CAD",
+                "list": 10,
+                "msrp": 10,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-05-22T13:26:19.0342926Z",
+            "stay_on_top": false
+        },
+        {
+            "bcin": "9KBZJAL",
+            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "beeshop",
+            "sku": "B0369",
+            "price": {
+                "currency": "CAD",
+                "list": 35,
+                "msrp": 35,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-05-22T13:26:19.034294Z",
+            "stay_on_top": false
+        }
+    ],
+    "name": null,
+    "description": null,
+    "shipping_address": null,
+    "billing_address": null,
+    "status": "closed",
+    "start_date": "2020-05-21T00:00:00Z",
+    "end_date": "2020-05-25T16:33:27.2971201Z",
+    "bc_pay_enabled": false,
+    "id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
+    "document_type": "jielong"
+}
 ```
 {% endapi-method-response-example %}
 
@@ -55,7 +106,7 @@ Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
 ```
-{    "message": "Ain't no cake like that."}
+
 ```
 {% endapi-method-response-example %}
 
@@ -586,13 +637,13 @@ Get a list of Jielong by Group Id
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="groupId" type="string" required=false %}
+{% api-method-parameter name="groupId" type="string" required=true %}
 group id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -672,13 +723,13 @@ Get a list of Products by Jielong Id
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="jielongId" type="string" required=false %}
+{% api-method-parameter name="jielongId" type="string" required=true %}
 Jielong id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -765,7 +816,7 @@ Get a Merchant Order by Jielong Id
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="jielongId" type="string" required=false %}
+{% api-method-parameter name="jielongId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
@@ -842,4 +893,80 @@ Get a Merchant Order by Jielong Id
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/image" %}
+{% api-method-summary %}
+Add image to Jielong
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="jielongId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="image1" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-form-data-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "has_more": false,
+    "continuation_token": null,
+    "results": [
+        *order1,
+        *order2,
+        ...
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+```text
+Content-Type: multipart/form-data
+```
 
