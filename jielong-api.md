@@ -24,7 +24,7 @@ Bearer {token}
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "supplier_merchant_id": "beeshop",
@@ -85,7 +85,7 @@ Cake successfully retrieved.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -95,7 +95,7 @@ Cake successfully retrieved.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -105,7 +105,7 @@ Cake successfully retrieved.
 Could not find a cake matching this query.
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -115,7 +115,7 @@ Could not find a cake matching this query.
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     message = "invalid input",
     validation_errors = []
@@ -166,7 +166,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "supplier_merchant_id": "beeshop",
@@ -232,7 +232,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -242,7 +242,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -312,7 +312,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
  *merchant_order 
 }
@@ -324,7 +324,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -334,7 +334,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -344,7 +344,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -386,7 +386,7 @@ Bearer token
 jielong\_by\_group document
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "group_id": "group1",
@@ -404,7 +404,7 @@ jielong\_by\_group document
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -414,7 +414,7 @@ jielong\_by\_group document
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -424,7 +424,7 @@ jielong\_by\_group document
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -462,7 +462,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
  *jielong 
 }
@@ -474,7 +474,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -484,7 +484,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -494,7 +494,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -506,14 +506,14 @@ post a list of jielong products
 
 ```text
 [
-	{
-	"bcin":"SAMUVRY",
-	"merchant_id":"beeshop"
-	},
-	{
-	"bcin":"9KBZJAL",
-	"merchant_id":"beeshop"
-	}
+    {
+    "bcin":"SAMUVRY",
+    "merchant_id":"beeshop"
+    },
+    {
+    "bcin":"9KBZJAL",
+    "merchant_id":"beeshop"
+    }
 ]
 ```
 
@@ -551,7 +551,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
  *jielong
 }
@@ -563,7 +563,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -573,7 +573,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -583,7 +583,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -615,7 +615,7 @@ jielong id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
 *jielong
 }
@@ -669,7 +669,7 @@ Opened, closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -693,7 +693,7 @@ Opened, closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -703,7 +703,7 @@ Opened, closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -741,7 +741,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
     {
         "bcin": "SAMUVRY",
@@ -786,7 +786,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -796,7 +796,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -828,7 +828,7 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "user_id": "mjiang2000@gmail.com",
@@ -876,7 +876,7 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -886,7 +886,7 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -930,7 +930,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
     "jielong_id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
@@ -1039,7 +1039,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1049,7 +1049,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1112,7 +1112,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -1130,7 +1130,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1140,7 +1140,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1192,7 +1192,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -1253,7 +1253,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1263,10 +1263,11 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+

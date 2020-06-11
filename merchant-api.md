@@ -371,3 +371,98 @@ opened\(default\), closed, cancelled
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/shipping" %}
+{% api-method-summary %}
+Get shipping rules
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "merchant_id": "ZEMBC",
+    "shipping_rules": [
+        {
+            "rule_code": "free_shipping_over_x_amount_or_flat",
+            "name": "Free shipping over x amount, otherwisee flat price",
+            "description": "Free shipping over x amount, otherwisee flat price",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "x_amount",
+                    "type": "number",
+                    "value": "10"
+                },
+                {
+                    "name": "flat_price",
+                    "type": "number",
+                    "value": "3.99"
+                }
+            ]
+        },
+        {
+            "rule_code": "pickup",
+            "name": "pickup",
+            "description": "pickup",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "pickup_address",
+                    "type": "text",
+                    "value": "4 Danbury court"
+                }
+            ]
+        }
+    ],
+    "id": "merchant_shipping_rules",
+    "document_type": "merchant_shipping_rules"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
