@@ -30,7 +30,7 @@ Bearer {token}
 successfully login
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "merchant_list": [
         {
@@ -80,7 +80,7 @@ successfully login
 Token is expired or not provided
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "statusCode": 401,
     "message": "Unauthorized. Access token is missing or invalid."
@@ -93,7 +93,7 @@ Token is expired or not provided
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -125,7 +125,7 @@ Bearer {token}
 successful login
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
    "merchant_list": [
         {
@@ -174,7 +174,7 @@ successful login
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "statusCode": 401,
     "message": "Unauthorized. Access token is missing or invalid."
@@ -184,10 +184,10 @@ successful login
 
 {% api-method-response-example httpCode=403 %}
 {% api-method-response-example-description %}
-if user is not a user of merchant
+if user is not a user of merchant 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -195,7 +195,36 @@ if user is not a user of merchant
 {% endapi-method-spec %}
 {% endapi-method %}
 
+
+
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/relay" %}
+{% api-method-summary %}
+Relay
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "statusCode": 401,
+    "message": "Unauthorized. Access token is missing or invalid."
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
 Request body
 
@@ -216,7 +245,7 @@ Request body
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/firebase/jwt" %}
 {% api-method-summary %}
-
+Get firebase jwt
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -238,7 +267,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "custom_token":"jwt token string"
 }
@@ -250,7 +279,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -260,7 +289,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -292,7 +321,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
 *user
 }
@@ -304,7 +333,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -314,7 +343,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
