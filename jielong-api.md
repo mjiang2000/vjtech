@@ -248,11 +248,36 @@ Bearer token
     "bc_pay_enabled": false,
     "id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "document_type": "jielong",
-    "_etag": "\"e80173b3-0000-0200-0000-5ecbf3590000\"",
-    "_rid": "l4AAAJEvAvoHAAAAAAAAAA==",
-    "_self": "dbs/l4AAAA==/colls/l4AAAJEvAvo=/docs/l4AAAJEvAvoHAAAAAAAAAA==/",
-    "_attachments": "attachments/",
-    "_ts": 1590424409
+    "shipping_rules": [
+        {
+            "rule_code": "free_shipping_over_x_amount_or_flat",
+            "name": "Free shipping over x amount, otherwisee flat price",
+            "description": "Free shipping over x amount, otherwisee flat price",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "x_amount",
+                    "value": "10"
+                },
+                {
+                    "name": "flat_price",
+                    "value": "3.99"
+                }
+            ]
+        },
+        {
+            "rule_code": "pickup",
+            "name": "pickup",
+            "description": "pickup",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "pickup_address",
+                    "value": "4 Danbury court"
+                }
+            ]
+        }
+    ]
 }
 ```
 {% endapi-method-response-example %}
