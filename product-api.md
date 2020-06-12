@@ -880,7 +880,7 @@ Request Body
 {
     "keyword":"water bottle",
     "size":10,
-    "from":40,
+    "from":0,
     "filters": [
         {
             "field":"merchant_id",
@@ -889,6 +889,10 @@ Request Body
          {
             "field":"active",
             "value":"true"
+        },
+         {
+            "field":"tags",
+            "value":"upinkoo"
         }
     ]
 }
