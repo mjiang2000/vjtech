@@ -333,7 +333,37 @@ Request body
                       "phone": "416-2728539",
                       "email": "mjiang2000@hotmail.com"
         },
-    "BCPayEnabled":true
+    "BCPayEnabled":true,
+    "shipping_rules": [
+        {
+            "rule_code": "free_shipping_over_x_amount_or_flat",
+            "name": "Free shipping over x amount, otherwisee flat price",
+            "description": "Free shipping over x amount, otherwisee flat price",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "x_amount",
+                    "value": "10"
+                },
+                {
+                    "name": "flat_price",
+                    "value": "3.99"
+                }
+            ]
+        },
+        {
+            "rule_code": "pickup",
+            "name": "pickup",
+            "description": "pickup",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "pickup_address",
+                    "value": "4 Danbury court"
+                }
+            ]
+        }
+    ]
 }
 ```
 
