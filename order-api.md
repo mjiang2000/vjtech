@@ -1094,7 +1094,7 @@ Get shipping quotes
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of shipping quotes provided by Campaign owner
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1187,13 +1187,13 @@ Invalid Input
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/amendment/item" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingmethod" %}
 {% api-method-summary %}
-Amend an item in order
+Update order shipping method
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Amend an jielong order after the payment is made by the customer user
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1219,12 +1219,11 @@ the order to be amend
 
 ```text
 {
-    "id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
-    "order_amendment_id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
-    "order_id": "577b066f-a30f-40a4-8951-077e2af1dadf",
+    "order_id": "33a5de0b-8642-463a-82bf-032ef7d94df6",
     "user_id": "mjiang2000@gmail.com",
-    "jielong_id": "ce59a172-41b9-4cef-9243-ce777cdf418d",
+    "jielong_id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
     "email": null,
+    "micro_merchant_id": "ZEMBC",
     "merchant_id": "beeshop",
     "merchant_name": "Beeshop",
     "line_items": [
@@ -1232,7 +1231,7 @@ the order to be amend
             "bcin": "SAMUVRY",
             "sku": null,
             "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-            "quantity": 1,
+            "quantity": 5,
             "image_url": null,
             "list_price": 10,
             "sale_price": null,
@@ -1240,19 +1239,48 @@ the order to be amend
             "weight": 0
         }
     ],
-    "base_amount": 10,
-    "shipping_method": null,
-    "shipping_method_name": null,
-    "shipping_method_description": null,
+    "base_amount": 50,
+    "shipping_method": "free_shipping_over_x_amount_or_flat",
+    "shipping_method_name": "Free shipping over x amount, otherwisee flat price",
+    "shipping_method_description": "Free shipping over x amount, otherwisee flat price",
     "shipping_amount": 0,
-    "total_amount": 10,
-    "created_at": "2020-06-08T02:55:38.9553867Z",
-    "updated_at": "2020-06-08T02:55:41.2548526Z",
-    "status": "new",
-    "refund_id": null,
-    "order_number": "BSC20-40",
-    "amended_by": "mjiang2000@gmail.com",
-    "document_type": "order_amendment"
+    "total_amount": 50,
+    "billing_address": {
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "8 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "ON",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com"
+    },
+    "shipping_address": {
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "8 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "ON",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com"
+    },
+    "created_at": "2020-06-09T23:41:04.7878223Z",
+    "updated_at": "2020-06-12T13:19:26.2269966Z",
+    "status": "submitted",
+    "payment_id": "e3ed37d7-11e2-452c-acd2-f835f04c6d05",
+    "order_number": "BSC1-31",
+    "notes": null,
+    "bc_pay_enabled": true,
+    "document_type": "order"
 }
 ```
 {% endapi-method-response-example %}
@@ -1302,18 +1330,12 @@ Invalid Input
 
 Request Body
 
-* the quantity is the number that changed to. For example, the original number is 5, it can be changed to 3, which means refund 2 items. As a result, 2 will be persisted in the order amendment for this item.
-* One order amendment can contain multiple items
-* The order amendment must be refund successfully to be consider in the campaign close action
-* One order can have multiple amendments, the GUI should avoid guiding user creating multiple amendments. Unless in scenario that extract amendment is required when previous amendment has completed refund process. 
-
 ```text
-{
-        "bcin": "SAMUVRY",
-    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-    "quantity": 1,
-    "merchant_id": "beeshop",
-        "list_price": 10.0
-}
+        {
+            "shipping_amount": 0.0,
+            "shipping_method": "free_shipping_over_x_amount_or_flat",
+            "shipping_method_name": "Free shipping over x amount, otherwisee flat price",
+            "shipping_method_description": "Free shipping over x amount, otherwisee flat price"
+        }
 ```
 
