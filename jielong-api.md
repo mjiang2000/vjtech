@@ -24,149 +24,7 @@ Bearer {token}
 Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
-```
-{
-    "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
-    "supplier_merchant_id": "beeshop",
-    "merchant_name": "beeshop",
-    "micro_merchant_id": "ZEMBC",
-    "listed_products": [
-        {
-            "bcin": "SAMUVRY",
-            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-            "language": "en",
-            "merchant_id": "beeshop",
-            "merchant_name": "beeshop",
-            "sku": "MT-AC-01",
-            "price": {
-                "currency": "CAD",
-                "list": 10,
-                "msrp": 10,
-                "cost": null
-            },
-            "listed_by": "mjiang2000@gmail.com",
-            "listed_at": "2020-05-22T13:26:19.0342926Z",
-            "stay_on_top": false
-        },
-        {
-            "bcin": "9KBZJAL",
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "language": "en",
-            "merchant_id": "beeshop",
-            "merchant_name": "beeshop",
-            "sku": "B0369",
-            "price": {
-                "currency": "CAD",
-                "list": 35,
-                "msrp": 35,
-                "cost": null
-            },
-            "listed_by": "mjiang2000@gmail.com",
-            "listed_at": "2020-05-22T13:26:19.034294Z",
-            "stay_on_top": false
-        }
-    ],
-    "name": null,
-    "description": null,
-    "shipping_address": null,
-    "billing_address": null,
-    "status": "closed",
-    "start_date": "2020-05-21T00:00:00Z",
-    "end_date": "2020-05-25T16:33:27.2971201Z",
-    "bc_pay_enabled": false,
-    "id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
-    "document_type": "jielong"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=403 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-Could not find a cake matching this query.
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=422 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    message = "invalid input",
-    validation_errors = []
-}
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-Request Body
-
 ```text
-{
-  "name": "beeshop product jielong",
-  "micro_merchant_id" : "ZEMBC",
-  "end_date":"2020-05-23"
-}
-```
-
-{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId" %}
-{% api-method-summary %}
-Update a Jielong
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="jielongId" type="string" required=true %}
-Jielong id
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "supplier_merchant_id": "beeshop",
@@ -218,11 +76,36 @@ Bearer token
     "bc_pay_enabled": false,
     "id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "document_type": "jielong",
-    "_etag": "\"e80173b3-0000-0200-0000-5ecbf3590000\"",
-    "_rid": "l4AAAJEvAvoHAAAAAAAAAA==",
-    "_self": "dbs/l4AAAA==/colls/l4AAAJEvAvo=/docs/l4AAAJEvAvoHAAAAAAAAAA==/",
-    "_attachments": "attachments/",
-    "_ts": 1590424409
+    "shipping_rules": [
+        {
+            "rule_code": "free_shipping_over_x_amount_or_flat",
+            "name": "Free shipping over x amount, otherwisee flat price",
+            "description": "Free shipping over x amount, otherwisee flat price",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "x_amount",
+                    "value": "10"
+                },
+                {
+                    "name": "flat_price",
+                    "value": "3.99"
+                }
+            ]
+        },
+        {
+            "rule_code": "pickup",
+            "name": "pickup",
+            "description": "pickup",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "pickup_address",
+                    "value": "4 Danbury court"
+                }
+            ]
+        }
+    ],
 }
 ```
 {% endapi-method-response-example %}
@@ -232,7 +115,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -242,7 +125,189 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
+```text
+
 ```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Could not find a cake matching this query.
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+    message = "invalid input",
+    validation_errors = []
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+```text
+{
+  "name": "beeshop product jielong",
+  "micro_merchant_id" : "ZEMBC",
+  "end_date":"2020-05-23",
+    "listed_products": [
+      {
+      "bcin":"SAMUVRY",
+      "merchant_id":"beeshop"
+      },
+      {
+      "bcin":"9KBZJAL",
+      "merchant_id":"beeshop"
+      }
+    ]
+}
+```
+
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId" %}
+{% api-method-summary %}
+Update a Jielong
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="jielongId" type="string" required=true %}
+Jielong id
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
+    "supplier_merchant_id": "beeshop",
+    "merchant_name": "beeshop",
+    "micro_merchant_id": "ZEMBC",
+    "listed_products": [
+        {
+            "bcin": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "beeshop",
+            "sku": "MT-AC-01",
+            "price": {
+                "currency": "CAD",
+                "list": 10,
+                "msrp": 10,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-05-22T13:26:19.0342926Z",
+            "stay_on_top": false
+        },
+        {
+            "bcin": "9KBZJAL",
+            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "beeshop",
+            "sku": "B0369",
+            "price": {
+                "currency": "CAD",
+                "list": 35,
+                "msrp": 35,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-05-22T13:26:19.034294Z",
+            "stay_on_top": false
+        }
+    ],
+    "name": null,
+    "description": null,
+    "shipping_address": null,
+    "billing_address": null,
+    "status": "closed",
+    "start_date": "2020-05-21T00:00:00Z",
+    "end_date": "2020-05-25T16:33:27.2971201Z",
+    "bc_pay_enabled": false,
+    "id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
+    "document_type": "jielong",
+    "shipping_rules": [
+        {
+            "rule_code": "free_shipping_over_x_amount_or_flat",
+            "name": "Free shipping over x amount, otherwisee flat price",
+            "description": "Free shipping over x amount, otherwisee flat price",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "x_amount",
+                    "value": "10"
+                },
+                {
+                    "name": "flat_price",
+                    "value": "3.99"
+                }
+            ]
+        },
+        {
+            "rule_code": "pickup",
+            "name": "pickup",
+            "description": "pickup",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "pickup_address",
+                    "value": "4 Danbury court"
+                }
+            ]
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -278,7 +343,37 @@ Request body
                       "phone": "416-2728539",
                       "email": "mjiang2000@hotmail.com"
         },
-    "BCPayEnabled":true
+    "BCPayEnabled":true,
+    "shipping_rules": [
+        {
+            "rule_code": "free_shipping_over_x_amount_or_flat",
+            "name": "Free shipping over x amount, otherwisee flat price",
+            "description": "Free shipping over x amount, otherwisee flat price",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "x_amount",
+                    "value": "10"
+                },
+                {
+                    "name": "flat_price",
+                    "value": "3.99"
+                }
+            ]
+        },
+        {
+            "rule_code": "pickup",
+            "name": "pickup",
+            "description": "pickup",
+            "description_template": null,
+            "settings": [
+                {
+                    "name": "pickup_address",
+                    "value": "4 Danbury court"
+                }
+            ]
+        }
+    ]
 }
 ```
 
@@ -312,7 +407,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
  *merchant_order 
 }
@@ -324,7 +419,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -334,7 +429,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -344,7 +439,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -386,7 +481,7 @@ Bearer token
 jielong\_by\_group document
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "group_id": "group1",
@@ -404,7 +499,7 @@ jielong\_by\_group document
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -414,7 +509,7 @@ jielong\_by\_group document
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -424,7 +519,7 @@ jielong\_by\_group document
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -462,7 +557,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
  *jielong 
 }
@@ -474,7 +569,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -484,7 +579,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -494,7 +589,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -506,14 +601,14 @@ post a list of jielong products
 
 ```text
 [
-	{
-	"bcin":"SAMUVRY",
-	"merchant_id":"beeshop"
-	},
-	{
-	"bcin":"9KBZJAL",
-	"merchant_id":"beeshop"
-	}
+    {
+    "bcin":"SAMUVRY",
+    "merchant_id":"beeshop"
+    },
+    {
+    "bcin":"9KBZJAL",
+    "merchant_id":"beeshop"
+    }
 ]
 ```
 
@@ -551,7 +646,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
  *jielong
 }
@@ -563,7 +658,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -573,7 +668,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -583,7 +678,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -615,7 +710,7 @@ jielong id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
 *jielong
 }
@@ -669,7 +764,7 @@ Opened, closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -693,7 +788,7 @@ Opened, closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -703,7 +798,7 @@ Opened, closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -741,7 +836,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 [
     {
         "bcin": "SAMUVRY",
@@ -786,7 +881,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -796,7 +891,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -828,7 +923,7 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "user_id": "mjiang2000@gmail.com",
@@ -876,7 +971,7 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -886,7 +981,7 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -930,7 +1025,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
     "jielong_id": "d610e2ba-1f5e-49d9-8c65-308fab26b497",
@@ -1039,7 +1134,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1049,7 +1144,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1112,7 +1207,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -1130,7 +1225,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1140,7 +1235,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1192,7 +1287,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -1253,7 +1348,7 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -1263,10 +1358,11 @@ submitted \(default\)
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
