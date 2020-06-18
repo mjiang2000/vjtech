@@ -720,6 +720,41 @@ jielong id
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host=" https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId" %}
+{% api-method-summary %}
+Get a Jielong 
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="jielongId" type="string" required=true %}
+jielong id
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+ "editable": true
+*jielong
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="get" host=" https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/group/:groupId/jielonglist" %}
 {% api-method-summary %}
 Get a list of Jielong by Group Id
