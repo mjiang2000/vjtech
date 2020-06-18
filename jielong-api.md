@@ -1419,12 +1419,7 @@ Bearer token
                     "jielong_status": "opened",
                     "document_type": "jielong_by_group"
                 }
-            ],
-            "created_at": "2020-06-08T20:10:46.9539363Z",
-            "status": "submitted",
-            "order_number": "BSC20-56"
-        }
-    ]
+            ]
 }
 ```
 {% endapi-method-response-example %}
