@@ -1388,16 +1388,6 @@ Get a list of published group id by jielong id
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
-
-
-{% api-method-parameter name="page\_size" type="string" required=false %}
-10 \(default\)
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="continuation\_token" type="string" required=false %}
-
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -1411,7 +1401,14 @@ Bearer token
     "has_more": false,
     "continuation_token": null,
     "results": [
-         
+           {
+            "jielong_id": "0f22c74c-0e8f-4996-8e4f-9e3276420764",
+            "group_id": "group1",
+            "published_at": "2020-06-16T15:24:51.9600251Z",
+            "published_by": "mjiang2000@gmail.com",
+            "jielong_status": "opened",
+            "document_type": "jielong_by_group"
+        }
     ]
 }
 ```
@@ -1439,3 +1436,4 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
