@@ -692,7 +692,7 @@ Get a Jielong Summary
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This is anonymous call
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -722,11 +722,11 @@ jielong id
 
 {% api-method method="get" host=" https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId" %}
 {% api-method-summary %}
-Get a Jielong 
+Get a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This call is authorized call. it will return "editable" flag according to user's context
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -736,6 +736,12 @@ Get a Jielong
 jielong id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -746,7 +752,7 @@ jielong id
 
 ```text
 {
- "editable": true
+ "editable": true,
 *jielong
 }
 ```
@@ -1481,3 +1487,4 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
