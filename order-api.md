@@ -40,7 +40,43 @@ jielong id. if order id is not generated, use jielong id to create a new order
 
 ```text
 {
- *order
+    "id": "94c3ef1c-269b-4476-b4d1-9eb5dcb2837d",
+    "order_id": "94c3ef1c-269b-4476-b4d1-9eb5dcb2837d",
+    "user_id": "mjiang2000@hotmail.com",
+    "jielong_id": "74202b37-35d2-487f-97fb-c8b37a684e75",
+    "email": "mjiang2000@hotmail.com",
+    "micro_merchant_id": "ZEMBC",
+    "merchant_id": "beeshop",
+    "merchant_name": "Beeshop",
+    "line_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": null,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "weight": 0
+        }
+    ],
+    "base_amount": 10,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
+    "shipping_amount": 0,
+    "total_amount": 10,
+    "billing_address": null,
+    "shipping_address": null,
+    "created_at": "2020-06-23T13:33:56.4431669Z",
+    "updated_at": "2020-06-23T13:34:01.1739112Z",
+    "status": "new",
+    "payment_id": null,
+    "order_number": "BSC20-63",
+    "notes": null,
+    "bc_pay_enabled": true,
+    "document_type": "order"
 }
 ```
 {% endapi-method-response-example %}
