@@ -4,7 +4,7 @@ description: Merchant order related API
 
 # Jielong API - Merchant Order
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantorder" %}
 {% api-method-summary %}
 Get a Merchant Order by Jielong Id
 {% endapi-method-summary %}
@@ -100,10 +100,9 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantorder/shippingaddress" %}
 {% api-method-summary %}
-Get a Merchant Order by Jielong Id
+Update Merchant order Address
 {% endapi-method-summary %}
 
 {% api-method-description %}
