@@ -6,7 +6,7 @@ Get an order
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Note: if get an order by jielong\_id and order is not exist, API will create an empty order and return in response
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -40,8 +40,31 @@ jielong id. if order id is not generated, use jielong id to create a new order
 
 ```text
 {
- *order
-}
+    "order_id": "395c62f7-b120-463b-8576-e7d530975217",
+    "user_id": "mjiang2000@gmail.com",
+    "jielong_id": "74202b37-35d2-487f-97fb-c8b37a684e75",
+    "email": "mjiang2000@gmail.com",
+    "micro_merchant_id": "ZEMBC",
+    "merchant_id": null,
+    "merchant_name": null,
+    "line_items": null,
+    "base_amount": 0.0,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
+    "shipping_amount": 0.0,
+    "total_amount": 0.0,
+    "billing_address": null,
+    "shipping_address": null,
+    "created_at": "2020-06-23T13:33:14.0654629Z",
+    "status": "new",
+    "payment_id": null,
+    "order_number": "BSC20-62",
+    "notes": null,
+    "bc_pay_enabled": true,
+    "id": "395c62f7-b120-463b-8576-e7d530975217",
+    "document_type": "order"
+ }
 ```
 {% endapi-method-response-example %}
 
@@ -636,6 +659,7 @@ Request body
    "notes":""
 }
 ```
+
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/orderlist" %}
 {% api-method-summary %}
 Get order list
