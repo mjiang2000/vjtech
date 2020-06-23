@@ -798,3 +798,103 @@ https://bc01dmedia.blob.core.windows.net/product-image-l/JH8QRQ2-4964549034598-0
 url=https://bc01dmedia.blob.core.windows.net/product-image/JH8QRQ2-4964549034598-01.jpg
 ```
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/search" %}
+{% api-method-summary %}
+Search product
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "total": 213,
+    "hits": [
+        *product1
+        *product2
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+* List products without searching, only specify the filter, keep the keyword empty
+
+```text
+{
+    "keyword":"",
+    "size":10,
+    "from":40,
+    "filters": [
+        {
+            "field":"merchant_id",
+            "value":"beeshop"
+        }
+    ]
+}
+```
+
+* Search keyword with multiple filters
+
+```text
+{
+    "keyword":"water bottle",
+    "size":10,
+    "from":0,
+    "filters": [
+        {
+            "field":"merchant_id",
+            "value":"beeshop"
+        },
+         {
+            "field":"active",
+            "value":"true"
+        },
+         {
+            "field":"tags",
+            "value":"upinkoo"
+        }
+    ]
+}
+```
+
