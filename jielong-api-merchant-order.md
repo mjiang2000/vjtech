@@ -231,7 +231,7 @@ Request body
 
 ```text
 {
-		"shipping_address":{
+        "shipping_address":{
             "full_name": "Jack Jiang",
             "street_1": "8 Danbury court",
             "street_2": null,
@@ -331,7 +331,7 @@ Bearer token
 
 {% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/shippingmethod" %}
 {% api-method-summary %}
-Update shipping method of a Merchant Order 
+Update shipping method of a Merchant Order
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -463,7 +463,6 @@ Bearer token
 Request body
 
 ```text
-   
     {
         "shipping_amount": 10,
         "shipping_method": "pickup",
@@ -478,7 +477,7 @@ Calculate a merchant order
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This API should be called  to get most up to date total amount when display the order review page before final submit
+This API should be called to get most up to date total amount when display the order review page before final submit
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -599,14 +598,13 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder/calculation" %}
+{% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder/submit" %}
 {% api-method-summary %}
-Calculate a merchant order
+submit a merchant order
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This API should be called  to get most up to date total amount when display the order review page before final submit
+This API should be called to submit the order to supplier merchant. It will kick off the merchant order process automatically. Merchant order can only be submitted once. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -679,7 +677,7 @@ Bearer token
     },
     "created_at": "2020-06-23T00:58:50.6652118Z",
     "updated_at": "2020-06-23T00:59:13.765005Z",
-    "status": "new",
+    "status": "submitted",
     "supplier_merchant_id": "beeshop",
     "supplier_merchant_name": null,
     "line_items": [
@@ -726,3 +724,4 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
