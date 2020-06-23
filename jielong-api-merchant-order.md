@@ -227,6 +227,35 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+Request body
+
+```text
+{
+		"shipping_address":{
+            "full_name": "Jack Jiang",
+            "street_1": "8 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com"
+        },
+        "billing_address":{
+            "full_name": "Jack Jiang",
+            "street_1": "8 Danbury court",
+            "street_2": null,
+            "city": "Markham",
+            "country": "Canada",
+            "province": "ON",
+            "postal_code": "L3R7S1",
+            "phone": "416-2728539",
+            "email": "mjiang2000@hotmail.com"
+        }
+}
+```
+
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder" %}
 {% api-method-summary %}
 Get a Merchant Order by Jielong Id
