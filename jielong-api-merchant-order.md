@@ -331,7 +331,7 @@ Bearer token
 
 {% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/shippingmethod" %}
 {% api-method-summary %}
-Get a Merchant Order by Jielong Id
+Update shipping method of a Merchant Order 
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -459,6 +459,18 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+Request body
+
+```text
+   
+    {
+        "shipping_amount": 10,
+        "shipping_method": "pickup",
+        "shipping_method_name": "pickup",
+        "shipping_method_description": "pickup"
+     }
+```
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder" %}
 {% api-method-summary %}
