@@ -1,3 +1,7 @@
+---
+description: Merchant order related API
+---
+
 # Jielong API - Merchant Order
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantOrder" %}
