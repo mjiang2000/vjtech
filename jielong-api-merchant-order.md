@@ -16,6 +16,12 @@ Get a Merchant Order by Jielong Id
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -89,3 +95,4 @@ Get a Merchant Order by Jielong Id
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
