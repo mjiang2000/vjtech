@@ -478,7 +478,7 @@ Calculate a merchant order
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+This API should be called  to get most up to date total amount when display the order review page before final submit
 {% endapi-method-description %}
 
 {% api-method-spec %}
