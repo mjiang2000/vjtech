@@ -69,7 +69,7 @@ the response will vary depends on the setting type required. see response sample
 {% endapi-method-response-example-description %}
 
 ```
-{    "message": "Ain't no cake like that."}
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
