@@ -905,7 +905,7 @@ Get a list of Products by Jielong Id
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+NEW Update\* ordered\_quantity field will be returned in the listed\_products
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -932,6 +932,7 @@ Bearer token
 ```text
 [
     {
+        "ordered_quantity": 3,
         "bcin": "SAMUVRY",
         "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
         "language": "en",
@@ -949,6 +950,7 @@ Bearer token
         "stay_on_top": false
     },
     {
+        "ordered_quantity": 3,
         "bcin": "9KBZJAL",
         "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
         "language": "en",
