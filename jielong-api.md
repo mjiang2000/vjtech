@@ -692,7 +692,9 @@ Get a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This call is authorized call. it will return "editable" flag according to user's context
+This call is authorized call. it will return "editable" flag according to user's context.  
+  
+NEW Update\*  ordered\_quantity field will be returned in the listed\_products  
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -719,7 +721,27 @@ Bearer token
 ```text
 {
  "editable": true,
-*jielong
+ ...
+  "listed_products": [ {
+            "ordered_quantity": 3,
+            "bcin": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "beeshop",
+            "sku": "MT-AC-01",
+            "price": {
+                "currency": "CAD",
+                "list": 10,
+                "msrp": 10,
+                "cost": null
+            },
+            "listed_by": "mjiang2000@gmail.com",
+            "listed_at": "2020-05-22T13:26:19.0342926Z",
+            "stay_on_top": false
+        }
+    ]
+  ...
 }
 ```
 {% endapi-method-response-example %}
@@ -729,7 +751,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -739,7 +761,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -749,7 +771,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
