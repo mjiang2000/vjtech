@@ -838,8 +838,7 @@ Bearer token
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="status" type="string" required=false %}
-Supported status: opened, closed, cancelled  
-Provide multiple status by "\|", for example "opened\|closed"  
+Opened, closed, cancelled
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="continuation\_token" type="string" required=false %}
