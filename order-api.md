@@ -679,7 +679,8 @@ Bearer token
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="status" type="string" required=false %}
-new, submitted, shipped, cancelled
+Supported status: new, submitted, shipped, cancelled  
+Use "\|" to provide multiple status, for example "new\|submited"  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_size" type="string" required=false %}
