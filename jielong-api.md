@@ -530,7 +530,7 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```text
-
+Jielong cannot be cancelled, it has active orders.
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
