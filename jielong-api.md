@@ -443,6 +443,16 @@ Bearer token
 
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+If  jielong has no active orders, it cannot be closed
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
@@ -762,9 +772,7 @@ Get a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This call is authorized call. it will return "editable" flag according to user's context.  
-  
-NEW Update\*  ordered\_quantity field will be returned in the listed\_products  
+This call is authorized call. it will return "editable" flag according to user's context.NEW Update\* ordered\_quantity field will be returned in the listed\_products
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -909,7 +917,7 @@ Bearer token
 {% api-method-query-parameters %}
 {% api-method-parameter name="status" type="string" required=false %}
 Supported status: opened, closed, cancelled  
-Provide multiple status by "\|", for example "opened\|closed"  
+Provide multiple status by "\|", for example "opened\|closed"
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="continuation\_token" type="string" required=false %}
@@ -1468,7 +1476,7 @@ Provide multiple status by "\|", for example "new\|submitted"
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
