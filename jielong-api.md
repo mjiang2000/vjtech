@@ -463,7 +463,7 @@ Cancel a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-A jielong enabled beeshop pay cannot be Cancelled if there is submitted orders.
+A jielong,  which has enabled beeshop pay,  cannot be Cancelled if there is submitted orders.
 {% endapi-method-description %}
 
 {% api-method-spec %}
