@@ -383,7 +383,7 @@ Close a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+A jielong without submitted order cannot be closed. GUI should prompt user to Cancel the Jielong.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -463,7 +463,7 @@ Cancel a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+A jielong enabled beeshop pay cannot be Cancelled if there is submitted orders.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -504,6 +504,16 @@ Bearer token
 ```
 {% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=304 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=401 %}
 {% api-method-response-example-description %}
 
@@ -514,12 +524,44 @@ Bearer token
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=403 %}
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+ A jielong enabled beeshop pay cannot be Cancelled if there is submitted orders.
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="patch" host=" https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/cancel" %}
+{% api-method-summary %}
+
+{% endapi-method-summary %}
+
+{% api-method-description %}
+A jielong enabled beeshop pay cannot be Cancelled if there is submitted orders.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
 {% api-method-response-example-description %}
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
