@@ -450,7 +450,7 @@ Request body
 
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/user/avatar" %}
 {% api-method-summary %}
-Upate user avatar
+Update user avatar
 {% endapi-method-summary %}
 
 {% api-method-description %}
