@@ -322,7 +322,7 @@ Bearer token
 
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/user/addressbook" %}
 {% api-method-summary %}
-Upate address book
+Update address book
 {% endapi-method-summary %}
 
 {% api-method-description %}
