@@ -489,7 +489,7 @@ Bearer token
 
 ```text
 {
- *jielong
+ *merchant_order 
 }
 ```
 {% endapi-method-response-example %}

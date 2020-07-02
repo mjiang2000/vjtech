@@ -216,7 +216,7 @@ Request body
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/firebase/jwt" %}
 {% api-method-summary %}
-
+get user firebase token
 {% endapi-method-summary %}
 
 {% api-method-description %}
