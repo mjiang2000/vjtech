@@ -197,7 +197,7 @@ if user is not a user of merchant
 
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/relay" %}
 {% api-method-summary %}
-aad b2c relay 
+aad b2c relay
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -332,7 +332,7 @@ Upate address book
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -447,6 +447,7 @@ Request body
     ]
     }
 ```
+
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/user/avatar" %}
 {% api-method-summary %}
 Upate user avatar
@@ -459,10 +460,16 @@ Upate user avatar
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="file1" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-form-data-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -473,6 +480,7 @@ Bearer token
 
 ```text
 {
+ "avatar": "url",
 *user
 }
 ```
@@ -500,3 +508,4 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
