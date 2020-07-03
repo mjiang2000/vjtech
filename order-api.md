@@ -679,7 +679,8 @@ Bearer token
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="status" type="string" required=false %}
-new, submitted, shipped, cancelled
+Supported status: new, submitted, shipped, cancelled  
+Use "\|" to provide multiple status, for example "new\|submited"  
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="page\_size" type="string" required=false %}
@@ -922,7 +923,15 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-response-example-description %}
 
 ```text
-
+[
+    {
+        "bcin":"SAMUVRY",
+        "merchant_id":"beeshop",
+        "before_change":"5",
+        "after_change":"0",
+        "change_reason": "product_not_found"
+    }
+]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}

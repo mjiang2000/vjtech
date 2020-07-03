@@ -509,3 +509,14 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+```text
+{
+   "group_id": auto_id,
+   "group_owner_id": user_id,
+   "is_group_chat": true //true: group chat, false conversation in 2 members
+   other fields ...
+}
+```
+
+
+
