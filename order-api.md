@@ -365,10 +365,6 @@ Bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="new" type="string" required=false %}
-y/n. force to create a new order.
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="order\_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
