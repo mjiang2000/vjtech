@@ -489,7 +489,7 @@ Bearer token
 
 ```text
 {
- *merchant_order 
+ *jielong
 }
 ```
 {% endapi-method-response-example %}
@@ -1568,6 +1568,72 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```text
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/group/:groupId/image" %}
+{% api-method-summary %}
+Upload group image
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="groupId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-form-data-parameters %}
+{% api-method-parameter name="image1" type="object" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-form-data-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "image": "https://bc01dmedialocal.blob.core.windows.net/group-image/testgroup-groupby.jpg"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
