@@ -601,4 +601,209 @@ Request body
     ]
 }
 ```
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/orders" %}
+{% api-method-summary %}
+Get a list of merchant orders 
+{% endapi-method-summary %}
 
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="string" required=false %}
+5\(default\)
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="status" type="string" required=false %}
+submitted, processing, processed, shipped
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "has_more": false,
+    "continuation_token": null,
+    "results": [
+        *merchant_order_1,
+        *merchant_order_2
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId" %}
+{% api-method-summary %}
+Get a Merchant Order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% api-method-parameter name="merchantOrderId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "jielong_id": "70a5399e-486f-4afc-93c1-e7c09608d705",
+    "user_id": "mjiang2000@gmail.com",
+    "micro_merchant_id": "ZEMBC",
+    "email": "mjiang2000@gmail.com",
+    "base_amount": 10.0,
+    "tax_amount": 1.3,
+    "shipping_method": "pickup",
+    "shipping_method_name": "pickup",
+    "shipping_method_description": "pickup",
+    "shipping_amount": 0.0,
+    "total_amount": 11.3,
+    "is_tax_included": true,
+    "billing_address": {
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "8 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "ON",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com"
+    },
+    "shipping_address": {
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "8 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "ON",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com"
+    },
+    "created_at": "2020-07-08T18:17:20.6005Z",
+    "updated_at": "2020-07-08T18:17:28.5232331Z",
+    "status": "submitted",
+    "supplier_merchant_id": "beeshop",
+    "supplier_merchant_name": null,
+    "line_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": null,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10.0,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": "regular",
+            "weight": 0.0
+        }
+    ],
+    "merchant_order_number": "BSCM1-ZEMBC-271",
+    "refunded": false,
+    "is_cancellation_in_order": false,
+    "id": "mo-70a5399e-486f-4afc-93c1-e7c09608d705",
+    "document_type": "merchant_order",
+    "_etag": "\"9d025a95-0000-0200-0000-5f060dd40000\""
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
