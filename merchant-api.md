@@ -294,7 +294,7 @@ merchant id
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/jielonglist" %}
 {% api-method-summary %}
-Get a list of jielong 
+Get a list of jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -336,7 +336,7 @@ opened\(default\), closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -353,7 +353,7 @@ opened\(default\), closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -363,7 +363,7 @@ opened\(default\), closed, cancelled
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -401,7 +401,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "merchant_id": "ZEMBC",
     "shipping_rules": [
@@ -448,7 +448,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -458,7 +458,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -496,7 +496,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "merchant_id": "ZEMBC",
     "shipping_rules": [
@@ -543,7 +543,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -553,7 +553,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -601,9 +601,10 @@ Request body
     ]
 }
 ```
+
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/orders" %}
 {% api-method-summary %}
-Get a list of merchant orders 
+Get a list of merchant orders
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -645,7 +646,7 @@ submitted, processing, processed, shipped
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 {
     "has_more": false,
     "continuation_token": null,
@@ -662,7 +663,7 @@ submitted, processing, processed, shipped
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -672,7 +673,7 @@ submitted, processing, processed, shipped
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -680,8 +681,7 @@ submitted, processing, processed, shipped
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId" %}
 {% api-method-summary %}
 Get a Merchant Order
 {% endapi-method-summary %}
@@ -696,6 +696,7 @@ Get a Merchant Order
 {% api-method-parameter name="merchantId" type="string" required=true %}
 
 {% endapi-method-parameter %}
+
 {% api-method-parameter name="merchantOrderId" type="string" required=true %}
 
 {% endapi-method-parameter %}
@@ -807,3 +808,4 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
