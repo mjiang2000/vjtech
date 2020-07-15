@@ -105,5 +105,13 @@ db.collection("notifications").doc("current_user_id").collection("messages")
 )
 ```
 
+Message schema
 
+```text
+{
+    "timestamp":"2020-07-15T17:16:11Z",
+    "content_schema":"chat",
+    "content":{}
+}
+```
 
