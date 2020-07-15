@@ -42,7 +42,7 @@ Send notification to user/group
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to get free cakes.
+This api will return  immediately without waiting for all notification messages are persisted in their document collection.
 {% endapi-method-description %}
 
 {% api-method-spec %}
