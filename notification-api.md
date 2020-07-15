@@ -95,5 +95,14 @@ Request body
 }
 ```
 
+To subscribe to the notification, set listener to firebase collection "messages" under "notifications" collection
+
+```text
+db.collection("notifications").doc("current_user_id").collection("messages")
+.where(
+    //filter by timestamp
+)
+```
+
 
 
