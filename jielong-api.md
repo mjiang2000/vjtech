@@ -1641,7 +1641,7 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/defaultavatar/:seed/png" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/defaultavatar/group/:seed" %}
 {% api-method-summary %}
 Get Default Avatar
 {% endapi-method-summary %}
@@ -1666,7 +1666,7 @@ group id
 {% endapi-method-response-example-description %}
 
 ```
-Content-Type : image/png
+https://bc01dmedia.blob.core.windows.net/group-image/fasdfwefaf-default.png
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
