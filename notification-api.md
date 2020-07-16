@@ -82,9 +82,9 @@ Request body
 
 ```text
 {
-    "filter_field":"group", //supported filed group or user
-    "filter_value":"Ee1TuUKQKY9jT42kM43m", //id of the group or user
-    "filter_option": "excludeMe", //optional
+    "audience_type":"group", //supported filed group or user
+    "audience_id":"Ee1TuUKQKY9jT42kM43m", //id of the group or user
+    "audience_option": "excludeMe", //optional
     "content_schema": "chat", //indicate the notification content schema
     "content":  //any json object, can be complex object with hierarchy
     {
