@@ -1672,7 +1672,7 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```
-https://bc01dmedia.blob.core.windows.net/group-image/fasdfwefaf-default.png
+{"image": "https://bc01dmedia.blob.core.windows.net/group-image/fasdfwefaf-default.png")
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
