@@ -1647,7 +1647,7 @@ Get Default Avatar
 {% endapi-method-summary %}
 
 {% api-method-description %}
-return png format image content
+return image url 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1657,6 +1657,12 @@ return png format image content
 group id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
