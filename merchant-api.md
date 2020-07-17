@@ -809,3 +809,295 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId/shipping" %}
+{% api-method-summary %}
+Get shipping information of the merchant order with remaining items
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantOrderId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "jielong_id": "70a5399e-486f-4afc-93c1-e7c09608d705",
+    "merchant_order_number": "BSCM1-ZEMBC-271",
+    "shippments": [
+        {
+            "jielong_id": "70a5399e-486f-4afc-93c1-e7c09608d705",
+            "tracking_number": "test",
+            "carrier": "canada_post",
+            "sent_at": "2020-07-16T14:25:38.4449487Z",
+            "expect_delivered_at": "0001-01-01T00:00:00",
+            "updated_at": "2020-07-16T14:25:38.4436536Z",
+            "shipped_items": [
+                {
+                    "bcin": "SAMUVRY",
+                    "sku": "SAMUVRY",
+                    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+                    "quantity": 1,
+                    "image_url": null,
+                    "list_price": 10.0,
+                    "sale_price": null,
+                    "merchant_id": "beeshop",
+                    "tax_code": null,
+                    "weight": 0.0
+                }
+            ],
+            "shipping_method": null,
+            "tracking_infos": null,
+            "flag": "fully_shipped",
+            "carrier_img_url": "https://media.beeshop.chat/asset/carrier/CanadaPost.png",
+            "carrier_tracking_url": "https://www.canadapost.ca/trackweb/en#/details/test",
+            "id": "6b6f8316-9db5-47b3-994d-5bfcef657ac1",
+            "document_type": "order_shipping_info",
+            "_etag": "\"6000c65e-0000-0200-0000-5f1063640000\""
+        }
+    ],
+    "remainning_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 0,
+            "image_url": null,
+            "list_price": 10.0,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": null,
+            "weight": 0.0
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId/shipping" %}
+{% api-method-summary %}
+create a new shipment of merchant order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantOrderId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "id": "41e08e12-fbd5-4777-84e7-578c2589ad68",
+    "jielong_id": "7d9fc8ba-01e3-4803-8f61-7d26d9f83a43",
+    "tracking_number": "test",
+    "carrier": "canada_post",
+    "sent_at": "2020-07-16T18:15:38.4870005Z",
+    "expect_delivered_at": "0001-01-01T00:00:00",
+    "updated_at": "2020-07-16T18:15:35.3421946Z",
+    "shipped_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": null,
+            "weight": 0
+        }
+    ],
+    "shipping_method": null,
+    "tracking_infos": null,
+    "flag": "fully_shipped",
+    "carrier_img_url": "https://media.beeshop.chat/asset/carrier/CanadaPost.png",
+    "carrier_tracking_url": "https://www.canadapost.ca/trackweb/en#/details/test",
+    "document_type": "order_shipping_info"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId/cancel" %}
+{% api-method-summary %}
+cancel remaining item of merchant order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantOrderId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+{
+    "id": "41e08e12-fbd5-4777-84e7-578c2589ad68",
+    "jielong_id": "7d9fc8ba-01e3-4803-8f61-7d26d9f83a43",
+    "tracking_number": "test",
+    "carrier": "canada_post",
+    "sent_at": "2020-07-16T18:15:38.4870005Z",
+    "expect_delivered_at": "0001-01-01T00:00:00",
+    "updated_at": "2020-07-16T18:15:35.3421946Z",
+    "shipped_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": null,
+            "weight": 0
+        }
+    ],
+    "shipping_method": null,
+    "tracking_infos": null,
+    "flag": "cancelled",
+    "carrier_img_url": "https://media.beeshop.chat/asset/carrier/CanadaPost.png",
+    "carrier_tracking_url": "https://www.canadapost.ca/trackweb/en#/details/test",
+    "document_type": "order_shipping_info"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
