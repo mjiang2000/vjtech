@@ -1210,3 +1210,17 @@ Request body
 }
 ```
 
+Keyword is searched within 
+
+```text
+"email",
+"merchant_order_number",
+"shipping_address.full_name",
+"shipping_address.first_name",
+"shipping_address.last_name",
+"shipping_address.street_1",
+"shipping_address.postal_code",
+"shipping_address.phone",
+"line_items.bcin"
+```
+
