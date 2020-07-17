@@ -1155,6 +1155,33 @@ bearer token
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "total": 6,
+    "hits": [
+        order1,
+        order2,
+        ...
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
