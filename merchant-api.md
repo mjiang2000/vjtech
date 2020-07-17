@@ -920,7 +920,6 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
-
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId/shipping" %}
 {% api-method-summary %}
 create a new shipment of merchant order
@@ -1011,6 +1010,29 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+Request body
+
+```text
+{
+"jielong_id":"7d9fc8ba-01e3-4803-8f61-7d26d9f83a43",
+"tracking_number":"test",
+"carrier":"canada_post", //supported carrier: canada_post or pickup
+"shipped_items":[
+      {
+            "bcin": "SAMUVRY",
+            "sku": "SAMUVRY",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10.0,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": null,
+            "weight": 0.0
+        }
+]
+}
+```
 
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId/cancel" %}
 {% api-method-summary %}
@@ -1101,3 +1123,4 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
