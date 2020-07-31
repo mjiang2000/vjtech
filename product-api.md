@@ -88,18 +88,6 @@ Cake successfully retrieved.
     ],
     "language": "en",
     "gtin": "4964549034550",
-    "categories": [
-        {
-            "product_category_id": "72",
-            "name": "Home and Kitchen",
-            "url": null,
-            "media": null,
-            "path": null,
-            "visible": false,
-            "sub_categories": null,
-            "depth": 0
-        }
-    ],
     "active": true,
     "unit": null,
     "description": "TRADITIONAL AUTHENTIC STYLE: Our plate set features an authentic Japanese style.  Hand-crafted from thick, durable and restaurant-grade ceramic material.\nGreat tableware to serve your family and guests with. With these beautiful dishwares, your home cooked meals can feel like you are eating out at a fancy restaurant.\nMULTI-FUNCTIONAL: Designed to enhance the dining experience of Asian inspired foods (Thai curries, noodle dishes, dumplings, fried rice, stir fry, chow mein, laksa, etc). Use also for cereals, popcorn, oatmeal, etc.\nEASY TO CLEAN: Dishwasher-safe. Simply throw into the top rack of your dishwasher or scrub by hand",
@@ -134,7 +122,8 @@ Cake successfully retrieved.
         "currency": "CAD",
         "list": 35.0,
         "msrp": 35.0,
-        "cost": null
+        "cost": null,
+        "gb_price": 30.0
     },
     "weight": 1.425,
     "id": "beeshop-9KBZJAL",
