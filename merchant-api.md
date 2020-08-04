@@ -1425,7 +1425,7 @@ Request Body
     "status":"received"
 ```
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/jielongtemplatelist" %}
 {% api-method-summary %}
 Get a list of jielong template
 {% endapi-method-summary %}
@@ -1437,10 +1437,26 @@ Get a list of jielong template
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="string" required=false %}
+default = 5
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
