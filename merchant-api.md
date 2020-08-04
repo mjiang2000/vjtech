@@ -1460,7 +1460,121 @@ bearer token
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
+    "merchant_id": "beeshop",
+    "jielong_template_id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
+    "listed_products": [
+        {
+            "bcin": "SAMUVRY",
+            "title": "日本制* 健康厨房必备天妇罗纸*吸油纸(50 sheets)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-02.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-02.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-02.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-02.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-02.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "sku": "MT-AC-01",
+            "price": {
+                "currency": "CAD",
+                "list": 7.52,
+                "msrp": 10,
+                "cost": null,
+                "gb_price": 6.12
+            },
+            "listed_by": "template",
+            "listed_at": "2020-08-04T18:31:46.0650389Z",
+            "stay_on_top": true
+        },
+        {
+            "bcin": "9KBZJAL",
+            "title": "日本制* MORITOKU 传统日式陶瓷盘子（5件套）",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-04.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-04.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-04.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-04.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-04.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-05.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-05.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-05.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-05.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-05.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-03.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-03.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-03.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-03.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-03.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/9KBZJAL-4964549034550-02.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/9KBZJAL-4964549034550-02.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/9KBZJAL-4964549034550-02.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-02.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/9KBZJAL-4964549034550-02.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
+            "language": "en",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "sku": "B0369",
+            "price": {
+                "currency": "CAD",
+                "list": 27.42,
+                "msrp": 35,
+                "cost": null,
+                "gb_price": 21.42
+            },
+            "listed_by": "template",
+            "listed_at": "2020-08-04T18:31:46.0650392Z",
+            "stay_on_top": true
+        }
+    ],
+    "name": "Jielong Template 1",
+    "description": "first jielong template",
+    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-8fd3da90-61f3-44e6-82c1-783cc0251da4-groupby.jpg",
+    "updated_at": "2020-08-04T18:31:48.7770926Z",
+    "document_type": "merchant_jielong_template"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
