@@ -1841,17 +1841,17 @@ Delete a Jielong Template
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="jielongTemplateId" type="string" required=false %}
+{% api-method-parameter name="jielongTemplateId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="merchantId" type="string" required=false %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
