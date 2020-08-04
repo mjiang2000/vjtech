@@ -1425,7 +1425,7 @@ Request Body
     "status":"received"
 ```
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
 {% api-method-summary %}
 Get a list of jielong template
 {% endapi-method-summary %}
@@ -1457,7 +1457,7 @@ Get a list of jielong template
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
 {% api-method-summary %}
 Create a Jielong Template
 {% endapi-method-summary %}
@@ -1489,7 +1489,7 @@ Create a Jielong Template
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="put" host="" path="" %}
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
 {% api-method-summary %}
 Update a Jielong Template
 {% endapi-method-summary %}
@@ -1521,7 +1521,7 @@ Update a Jielong Template
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="" path="" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
 {% api-method-summary %}
 Get a Jielong Template
 {% endapi-method-summary %}
@@ -1553,7 +1553,7 @@ Get a Jielong Template
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="" path="" %}
+{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
 {% api-method-summary %}
 Delete a Jielong Template
 {% endapi-method-summary %}
@@ -1585,7 +1585,7 @@ Delete a Jielong Template
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="" path="" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
 {% api-method-summary %}
 Upload a jielong template image
 {% endapi-method-summary %}
