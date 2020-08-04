@@ -1849,6 +1849,12 @@ Delete a Jielong Template
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -1858,7 +1864,7 @@ Delete a Jielong Template
 {% endapi-method-response-example-description %}
 
 ```
-
+deleted
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
