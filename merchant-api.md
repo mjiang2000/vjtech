@@ -1437,7 +1437,7 @@ Get a Jielong Template
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="merchantTemplateId" type="string" required=true %}
+{% api-method-parameter name="jielongTemplateId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
@@ -1719,7 +1719,7 @@ Update a Jielong Template
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="merchantTemplateId" type="string" required=true %}
+{% api-method-parameter name="jielongTemplateId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
@@ -1829,7 +1829,7 @@ Request body
 }
 ```
 
-{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="" %}
+{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/jielongtemplate/:jielongTemplateId" %}
 {% api-method-summary %}
 Delete a Jielong Template
 {% endapi-method-summary %}
@@ -1841,7 +1841,11 @@ Delete a Jielong Template
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="" type="string" required=false %}
+{% api-method-parameter name="jielongTemplateId" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantId" type="string" required=false %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
