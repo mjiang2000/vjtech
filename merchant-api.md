@@ -1572,7 +1572,13 @@ default = 5
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "has_more": true,
+    "continuation_token": "eyJ0b2tlbiI6IitSSUQ6fmRob1hBTG9GUlNaREF3QUFBQUFBQUE9PSNSVDoxI1RSQzo1I1JURDowYm5JR2FpV2xDZ2lTdzNva1VxWkJUTXhNekV1TVRrdU1UVlZNamc3TkRjN05Ea3ZPVGN4TkRvME0xc0EjSVNWOjIjSUVPOjY1NTUxI0ZQQzpBZ0VBQUFBRUFFRUQrUUE9IiwicmFuZ2UiOnsibWluIjoiIiwibWF4IjoiRkYifX0=",
+    "results": [
+        jielong_template_1,
+        jielong_template_2,
+    ]
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
