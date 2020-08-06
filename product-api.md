@@ -404,7 +404,7 @@ Request Body
 }
 ```
 
-{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:productId" %}
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:bcin" %}
 {% api-method-summary %}
 Update a existing product
 {% endapi-method-summary %}
@@ -416,7 +416,7 @@ Update a existing product
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="productId" type="string" required=true %}
+{% api-method-parameter name="bcin" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
@@ -614,7 +614,7 @@ Request body
 }
 ```
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:productId/image" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:bcin/image" %}
 {% api-method-summary %}
 Upload a new image
 {% endapi-method-summary %}
@@ -626,7 +626,7 @@ Upload a new image
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="productId" type="string" required=true %}
+{% api-method-parameter name="bcin" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
@@ -700,7 +700,7 @@ supported image format : jpg, png and gif
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:productId/image" %}
+{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:bcin/image" %}
 {% api-method-summary %}
 Delete an image
 {% endapi-method-summary %}
@@ -716,7 +716,7 @@ Delete an image
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="productId" type="string" required=true %}
+{% api-method-parameter name="bcin" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
