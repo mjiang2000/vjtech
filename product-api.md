@@ -16,6 +16,12 @@ This endpoint allows you to get free cakes.
 bcin aka product id
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="language" type="string" required=false %}
+en\(default\), zh-Hans, zh-Hant
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -886,6 +892,23 @@ Request Body
     ]
 }
 ```
+
+* Filter with language. Language filter will default to "en" if not provided.
+
+```text
+{
+   ....
+  "filters": [
+         ...
+         {
+            "field":"language",
+            "value":"en"
+        }
+    ]
+}
+```
+
+
 
 {% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/product/v1" path="/merchant/:merchantId/product/:bcin" %}
 {% api-method-summary %}
