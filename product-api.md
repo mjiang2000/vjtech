@@ -1010,7 +1010,7 @@ Bearer token
 {% endapi-method-headers %}
 
 {% api-method-form-data-parameters %}
-{% api-method-parameter name="image1" type="object" required=false %}
+{% api-method-parameter name="image1" type="object" required=true %}
 image file\(png, jpg or gif\)
 {% endapi-method-parameter %}
 {% endapi-method-form-data-parameters %}
