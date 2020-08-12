@@ -1094,6 +1094,29 @@ image path
 {% endapi-method-response-example-description %}
 
 ```
+{
+    "type": "image",
+    "data": "https://bc01dmedialocal.blob.core.windows.net/product-image/726PX7A-ZEMBC-d-jack.jiang%40beeshop.chat-default.png"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
 
 ```
 {% endapi-method-response-example %}
