@@ -1079,6 +1079,12 @@ Delete description image
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="url" type="string" required=true %}
+image path
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -1094,4 +1100,8 @@ Bearer token
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+```text
+url=https://bc01dmedialocal.blob.core.windows.net/product-image/726PX7A-ZEMBC-d-jack.jiang@beeshop.chat-default.png
+```
 
