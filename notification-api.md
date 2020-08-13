@@ -127,7 +127,7 @@ Invite user to group
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 firebase id token
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
