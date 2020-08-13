@@ -4,7 +4,7 @@ description: >-
   different pattern
 ---
 
-# Notification API
+# Firebase API
 
 | Env | base Url |
 | :--- | :--- |
@@ -96,10 +96,10 @@ Request body
 }
 ```
 
-To subscribe to the notification, set listener to firebase collection "messages" under "notifications" collection
+To subscribe to the notification, set listener to firebase collection "groups" under "notifications" collection
 
 ```text
-db.collection("notifications").doc("current_user_id").collection("messages")
+db.collection("notifications").doc("current_user_id").collection("groups")
 .where(
     //filter by timestamp
 )

@@ -9,5 +9,5 @@
 * [Order API - Customer order](order-api.md)
 * [Payment API](payment-api.md)
 * [Management API](management-api.md)
-* [Notification API](notification-api.md)
+* [Firebase API](notification-api.md)
 
