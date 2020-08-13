@@ -6,6 +6,59 @@ description: about merchant from git
 
 Merchant API
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchantlist" %}
+{% api-method-summary %}
+Get a list of wholesale merchants
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="string" required=false %}
+default = 5
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "has_more": false,
+    "continuation_token": null,
+    "results": [
+        {
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "logo": "https://media.beeshop.chat/asset/merchant/beeshop/logo.png",
+            "overview": null
+        },
+        {
+            "merchant_id": "pennystore",
+            "merchant_name": "Penny Store",
+            "logo": null,
+            "overview": null
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/micromerchant" %}
 {% api-method-summary %}
 ​Create a micro merchant
