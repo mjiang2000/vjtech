@@ -363,7 +363,7 @@ Get a list of jielong
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
