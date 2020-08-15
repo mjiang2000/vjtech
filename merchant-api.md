@@ -424,6 +424,14 @@ opened\(default\), closed, cancelled
 {% endapi-method-spec %}
 {% endapi-method %}
 
+```text
+if filter of the order status = closed, the returned jielong object will have order status field
+{
+ ...
+ "merchant_order_status":"new" 
+}
+```
+
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/shipping" %}
 {% api-method-summary %}
 Get shipping rules
