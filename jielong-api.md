@@ -30,7 +30,6 @@ Cake successfully retrieved.
     "supplier_merchant_id": "beeshop",
     "merchant_name": "beeshop",
     "micro_merchant_id": "ZEMBC",
-    "micro_merchant_name": "mjiang2000@gmail.com",
     "listed_products": [
         {
             "bcin": "SAMUVRY",

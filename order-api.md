@@ -45,6 +45,7 @@ jielong id. if order id is not generated, use jielong id to create a new order
     "jielong_id": "74202b37-35d2-487f-97fb-c8b37a684e75",
     "email": "mjiang2000@gmail.com",
     "micro_merchant_id": "ZEMBC",
+    "micro_merchant_name": "mjiang2000@gmail.com",
     "merchant_id": null,
     "merchant_name": null,
     "line_items": null,
