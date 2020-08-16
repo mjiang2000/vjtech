@@ -363,7 +363,7 @@ Get a list of jielong
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -423,14 +423,6 @@ opened\(default\), closed, cancelled
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-```text
-if filter of the order status = closed, the returned jielong object will have order status field
-{
- ...
- "merchant_order_status":"new" 
-}
-```
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/shipping" %}
 {% api-method-summary %}
