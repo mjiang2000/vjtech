@@ -1130,7 +1130,7 @@ Request Body
 * the quantity is the number that changed to. For example, the original number is 5, it can be changed to 3, which means refund 2 items. As a result, 2 will be persisted in the order amendment for this item.
 * One order amendment can contain multiple items
 * The order amendment must be refund successfully to be consider in the campaign close action
-* One order can have multiple amendments, the GUI should avoid guiding user creating multiple amendments. Unless in scenario that extract amendment is required when previous amendment has completed refund process. 
+* One order can have multiple amendments, but there should be only one un-refunded amendment. 
 
 ```text
 {
