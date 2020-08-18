@@ -30,6 +30,7 @@ Cake successfully retrieved.
     "supplier_merchant_id": "beeshop",
     "merchant_name": "beeshop",
     "micro_merchant_id": "ZEMBC",
+    "micro_merchant_name": "mjiang2000@gmail.com",
     "listed_products": [
         {
             "bcin": "SAMUVRY",
@@ -1754,6 +1755,44 @@ jielong*
 
 ```
 Cancelled or closed jielong cannot be updated
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/qrcode" %}
+{% api-method-summary %}
+Get QR code
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="url" type="string" required=true %}
+url to be encoded 
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
