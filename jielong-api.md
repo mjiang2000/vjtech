@@ -1792,7 +1792,7 @@ url to be encoded
 {% endapi-method-response-example-description %}
 
 ```
-
+image/png
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
