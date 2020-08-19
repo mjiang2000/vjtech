@@ -32,7 +32,7 @@ setting document type:
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 the response will vary depends on the setting type required. see response samples below
 ```
 {% endapi-method-response-example %}
@@ -42,7 +42,7 @@ the response will vary depends on the setting type required. see response sample
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 
 ```
 {% endapi-method-response-example %}
@@ -50,7 +50,7 @@ the response will vary depends on the setting type required. see response sample
 {% endapi-method-spec %}
 {% endapi-method %}
 
-Response - ios\_version 
+Response - ios\_version
 
 ```text
 {
@@ -63,7 +63,6 @@ Response - ios\_version
 }
 ```
 
-
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/management/v1" path="/qrcode" %}
 {% api-method-summary %}
 Get QR code
@@ -75,15 +74,9 @@ Get QR code
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-
 {% api-method-query-parameters %}
 {% api-method-parameter name="url" type="string" required=true %}
-url to be encoded 
+url to be encoded
 {% endapi-method-parameter %}
 {% endapi-method-query-parameters %}
 {% endapi-method-request %}
@@ -94,14 +87,11 @@ url to be encoded
 
 {% endapi-method-response-example-description %}
 
-```
+```text
 image/png
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-
-
 
