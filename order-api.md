@@ -909,29 +909,31 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-response-example-description %}
 
 ```text
-[
-    {
-        "bcin":"SAMUVRY",
-        "merchant_id":"beeshop",
-        "before_change":"5",
-        "after_change":"0",
-        "change_reason": "product_not_found"
-    },
-     {
-        "bcin":"SAMUVRY",
-        "merchant_id":"beeshop",
-        "before_change":"5",
-        "after_change":"1",
-        "change_reason": "insufficient_inventory"
-    },
-     {
-        "bcin":"SAMUVRY",
-        "merchant_id":"beeshop",
-        "before_change":"10",
-        "after_change":"9",
-        "change_reason": "price_adjusted"
-    }
-]
+{
+ "change_logs": [
+        {
+            "bcin":"SAMUVRY",
+            "merchant_id":"beeshop",
+            "before_change":"5",
+            "after_change":"0",
+            "change_reason": "product_not_found"
+        },
+         {
+            "bcin":"SAMUVRY",
+            "merchant_id":"beeshop",
+            "before_change":"5",
+            "after_change":"1",
+            "change_reason": "insufficient_inventory"
+        },
+         {
+            "bcin":"SAMUVRY",
+            "merchant_id":"beeshop",
+            "before_change":"10",
+            "after_change":"9",
+            "change_reason": "price_adjusted"
+        }
+    ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
