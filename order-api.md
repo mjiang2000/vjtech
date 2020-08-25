@@ -913,8 +913,7 @@ jielong id. if order id is not generated, use jielong id to create a new order
  "change_logs": [
         {
             "bcin":"SAMUVRY",
-            "title":"product title",
-            "image_url":"http://image.jpg",
+           "line_item":lineitem*
             "merchant_id":"beeshop",
             "before_change":"5",
             "after_change":"0",
@@ -922,8 +921,7 @@ jielong id. if order id is not generated, use jielong id to create a new order
         },
          {
             "bcin":"SAMUVRY",
-            "title":"product title",
-            "image_url":"http://image.jpg",
+           "line_item":lineitem*
             "merchant_id":"beeshop",
             "before_change":"5",
             "after_change":"1",
@@ -931,8 +929,7 @@ jielong id. if order id is not generated, use jielong id to create a new order
         },
          {
             "bcin":"SAMUVRY",
-           "title":"product title",
-           "image_url":"http://image.jpg",
+            "line_item":lineitem*,
             "merchant_id":"beeshop",
             "before_change":"10",
             "after_change":"9",
