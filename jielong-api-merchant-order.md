@@ -168,7 +168,82 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
+    "user_id": "mjiang2000@gmail.com",
+    "micro_merchant_id": "ZEMBC",
+    "email": "mjiang2000@gmail.com",
+    "base_amount": 42.84,
+    "tax_amount": 2.14,
+    "shipping_method": "pickup",
+    "shipping_method_name": "In Store Pickup",
+    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
+    "shipping_amount": 0.0,
+    "total_amount": 44.98,
+    "is_tax_included": true,
+    "billing_address": {
+        "id": null,
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "7 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "BC",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com",
+        "is_default": false
+    },
+    "shipping_address": {
+        "id": null,
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "7 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "BC",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com",
+        "is_default": false
+    },
+    "created_at": "2020-08-25T16:15:07.6588348Z",
+    "updated_at": "2020-08-25T17:49:23.83497Z",
+    "status": "new",
+    "supplier_merchant_id": "beeshop",
+    "supplier_merchant_name": "Beeshop",
+    "line_items": [
+        {
+            "bcin": "9KBZJAL",
+            "sku": null,
+            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+            "quantity": 2,
+            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+            "list_price": 21.42,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": "regular",
+            "weight": 0.0
+        }
+    ],
+    "merchant_order_number": null,
+    "refunded": false,
+    "is_cancellation_in_order": false,
+    "ibv_enabled": false,
+    "ibv_rate": 0.2,
+    "payment_received": 54.84,
+    "payment_refunded": 0.0,
+    "transaction_fee": 0.0,
+    "total_payout": 9.86,
+    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
+    "document_type": "merchant_order"
+    }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
