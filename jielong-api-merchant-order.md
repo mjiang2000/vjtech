@@ -36,81 +36,44 @@ Bearer token
 
 ```text
 {
-    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
+    "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "user_id": "mjiang2000@gmail.com",
     "micro_merchant_id": "ZEMBC",
     "email": "mjiang2000@gmail.com",
-    "base_amount": 42.84,
-    "tax_amount": 2.14,
-    "shipping_method": "pickup",
-    "shipping_method_name": "In Store Pickup",
-    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
+    "base_amount": 0.0,
+    "tax_amount": 0.0,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
     "shipping_amount": 0.0,
-    "total_amount": 44.98,
-    "is_tax_included": true,
-    "billing_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "shipping_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "created_at": "2020-08-25T16:15:07.6588348Z",
-    "updated_at": "2020-08-25T17:49:23.83497Z",
+    "total_amount": 30.0,
+    "is_tax_included": false,
+    "billing_address": null,
+    "shipping_address": null,
+    "created_at": "2020-05-25T16:33:42.5759125Z",
+    "updated_at": "2020-05-25T16:33:42.6086565Z",
     "status": "new",
     "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
+    "supplier_merchant_name": "beeshop",
     "line_items": [
         {
-            "bcin": "9KBZJAL",
+            "bcin": "SAMUVRY",
             "sku": null,
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "quantity": 2,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
-            "list_price": 21.42,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 3,
+            "image_url": null,
+            "list_price": 10.0,
             "sale_price": null,
             "merchant_id": "beeshop",
-            "tax_code": "regular",
             "weight": 0.0
         }
     ],
     "merchant_order_number": null,
     "refunded": false,
     "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "payment_received": 54.84,
-    "payment_refunded": 0.0,
-    "transaction_fee": 0.0,
-    "total_payout": 9.86,
-    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
-    "document_type": "merchant_order"
-    }
+    "id": "mo-77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
+    "document_type": "merchant_order",
+}
 ```
 {% endapi-method-response-example %}
 
@@ -739,16 +702,6 @@ Bearer token
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
 {% api-method-response-example httpCode=401 %}
 {% api-method-response-example-description %}
 
@@ -766,130 +719,6 @@ Bearer token
 
 ```text
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantorder/ibv/{switch}" %}
-{% api-method-summary %}
-Enable IBV price of merchant order
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="switch" type="string" required=true %}
-y/n
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="jielongId" type="string" required=true %}
-jielong Id
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "id": "mo-1f19d1fc-9471-4555-ad40-c9768b115d8c",
-    "jielong_id": "1f19d1fc-9471-4555-ad40-c9768b115d8c",
-    "user_id": "mjiang2000@gmail.com",
-    "micro_merchant_id": "ZEMBC",
-    "email": "mjiang2000@gmail.com",
-    "base_amount": 6.12,
-    "tax_amount": 0.8,
-    "shipping_method": "free_shipping_over_x_amount_or_flat",
-    "shipping_method_name": "free shipping over $75",
-    "shipping_method_description": "3-11 days, free shipping over $75",
-    "shipping_amount": 7.99,
-    "total_amount": 14.91,
-    "is_tax_included": true,
-    "billing_address": { ...   },
-    "shipping_address": { ...   },
-    "created_at": "2020-07-28T04:24:05.2459763Z",
-    "updated_at": "2020-07-28T04:27:18.9391778Z",
-    "status": "new",
-    "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
-    "line_items": [
-        {
-            "bcin": "SAMUVRY",
-            "sku": null,
-            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-            "quantity": 1,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
-            "list_price": 6.12,
-            "sale_price": null,
-            "merchant_id": "beeshop",
-            "tax_code": "regular",
-            "weight": 0
-        }
-    ],
-    "merchant_order_number": "BSCM1-ZEMBC-702",
-    "refunded": false,
-    "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "document_type": "merchant_order"
-}
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=403 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=422 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-"merchant order is not valid to update"
-"IBV price is not supported by supplier merchant"
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
