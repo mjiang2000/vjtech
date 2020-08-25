@@ -139,7 +139,7 @@ Bearer token
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantorderpreview" %}
 {% api-method-summary %}
-Get a Merchant orde
+Get a Merchant order preview
 {% endapi-method-summary %}
 
 {% api-method-description %}
