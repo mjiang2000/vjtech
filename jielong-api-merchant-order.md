@@ -143,7 +143,7 @@ Get a Merchant order preview
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+Note: this api only applible when jielong is not closed.
 {% endapi-method-description %}
 
 {% api-method-spec %}
