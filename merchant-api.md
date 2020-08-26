@@ -363,7 +363,7 @@ Get a list of jielong
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -423,6 +423,14 @@ opened\(default\), closed, cancelled
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+```text
+if filter of the order status = closed, the returned jielong object will have order status field
+{
+ ...
+ "merchant_order_status":"new" 
+}
+```
 
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/shipping" %}
 {% api-method-summary %}
@@ -2046,4 +2054,138 @@ Response jielong object will have url link
 ...
 }
 ```
+
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/merchantorder/:merchantOrderId/pickinglist" %}
+{% api-method-summary %}
+Get merchant order picking list
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantOrderid" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "jielong_id": "70a5399e-486f-4afc-93c1-e7c09608d705",
+    "user_id": "mjiang2000@gmail.com",
+    "email": "mjiang2000@gmail.com",
+    "base_amount": 10.0,
+    "tax_amount": 1.3,
+    "shipping_method": "free_shipping_over_x_amount_or_flat",
+    "shipping_method_name": "free shipping over $75",
+    "shipping_method_description": "3-11 days, free shipping over $75",
+    "shipping_amount": 0.0,
+    "total_amount": 11.3,
+    "is_tax_included": true,
+    "billing_address": {
+        "id": null,
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "8 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "ON",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com",
+        "is_default": false
+    },
+    "shipping_address": {
+        "id": null,
+        "full_name": "Jack Jiang",
+        "first_name": null,
+        "Last_name": null,
+        "company_name": null,
+        "street_1": "7 Danbury court",
+        "street_2": null,
+        "city": "Markham",
+        "country": "Canada",
+        "province": "ON",
+        "postal_code": "L3R7S1",
+        "phone": "416-2728539",
+        "email": "mjiang2000@hotmail.com",
+        "is_default": false
+    },
+    "created_at": "2020-07-08T18:17:20.6005Z",
+    "updated_at": "2020-07-08T18:17:28.5232331Z",
+    "status": "shipped",
+    "supplier_merchant_id": "beeshop",
+    "supplier_merchant_name": null,
+    "line_items": [
+        {
+            "ajin": "SAMUVRY",
+            "sku": "MT-AC-01",
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10.0,
+            "sale_price": null,
+            "merchant_id": "beeshop",
+            "tax_code": "regular",
+            "weight": 0.0,
+            "stock_location": {
+                "aisle": "",
+                "bay": "",
+                "shelf": "",
+                "bin": ""
+            }
+        }
+    ],
+    "merchant_order_number": "BSCM1-ZEMBC-271",
+    "refunded": false,
+    "is_cancellation_in_order": false
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 

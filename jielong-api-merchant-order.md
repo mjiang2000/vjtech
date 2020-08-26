@@ -36,81 +36,44 @@ Bearer token
 
 ```text
 {
-    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
+    "jielong_id": "77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
     "user_id": "mjiang2000@gmail.com",
     "micro_merchant_id": "ZEMBC",
     "email": "mjiang2000@gmail.com",
-    "base_amount": 42.84,
-    "tax_amount": 2.14,
-    "shipping_method": "pickup",
-    "shipping_method_name": "In Store Pickup",
-    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
+    "base_amount": 0.0,
+    "tax_amount": 0.0,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
     "shipping_amount": 0.0,
-    "total_amount": 44.98,
-    "is_tax_included": true,
-    "billing_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "shipping_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "created_at": "2020-08-25T16:15:07.6588348Z",
-    "updated_at": "2020-08-25T17:49:23.83497Z",
+    "total_amount": 30.0,
+    "is_tax_included": false,
+    "billing_address": null,
+    "shipping_address": null,
+    "created_at": "2020-05-25T16:33:42.5759125Z",
+    "updated_at": "2020-05-25T16:33:42.6086565Z",
     "status": "new",
     "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
+    "supplier_merchant_name": "beeshop",
     "line_items": [
         {
-            "bcin": "9KBZJAL",
+            "bcin": "SAMUVRY",
             "sku": null,
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "quantity": 2,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
-            "list_price": 21.42,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 3,
+            "image_url": null,
+            "list_price": 10.0,
             "sale_price": null,
             "merchant_id": "beeshop",
-            "tax_code": "regular",
             "weight": 0.0
         }
     ],
     "merchant_order_number": null,
     "refunded": false,
     "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "payment_received": 54.84,
-    "payment_refunded": 0.0,
-    "transaction_fee": 0.0,
-    "total_payout": 9.86,
-    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
-    "document_type": "merchant_order"
-    }
+    "id": "mo-77d6ff4d-9659-44af-a87e-16cc08b2ea9a",
+    "document_type": "merchant_order",
+}
 ```
 {% endapi-method-response-example %}
 
@@ -130,139 +93,6 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```text
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantorderpreview" %}
-{% api-method-summary %}
-Get a Merchant order preview
-{% endapi-method-summary %}
-
-{% api-method-description %}
-Note: this api only applicable when jielong is not closed.
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="jielongId" type="string" required=true %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
-    "user_id": "mjiang2000@gmail.com",
-    "micro_merchant_id": "ZEMBC",
-    "email": "mjiang2000@gmail.com",
-    "base_amount": 42.84,
-    "tax_amount": 2.14,
-    "shipping_method": "pickup",
-    "shipping_method_name": "In Store Pickup",
-    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
-    "shipping_amount": 0.0,
-    "total_amount": 44.98,
-    "is_tax_included": true,
-    "billing_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "shipping_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "created_at": "2020-08-25T16:15:07.6588348Z",
-    "updated_at": "2020-08-25T17:49:23.83497Z",
-    "status": "new",
-    "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
-    "line_items": [
-        {
-            "bcin": "9KBZJAL",
-            "sku": null,
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "quantity": 2,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
-            "list_price": 21.42,
-            "sale_price": null,
-            "merchant_id": "beeshop",
-            "tax_code": "regular",
-            "weight": 0.0
-        }
-    ],
-    "merchant_order_number": null,
-    "refunded": false,
-    "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "payment_received": 54.84,
-    "payment_refunded": 0.0,
-    "transaction_fee": 0.0,
-    "total_payout": 9.86,
-    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
-    "document_type": "merchant_order"
-    }
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=403 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
 
 ```
 {% endapi-method-response-example %}
@@ -302,17 +132,18 @@ Bearer token
 
 ```text
 {
-    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
+    "id": "mo-39f413f0-176e-44dd-852e-590f994917e5",
+    "jielong_id": "39f413f0-176e-44dd-852e-590f994917e5",
     "user_id": "mjiang2000@gmail.com",
     "micro_merchant_id": "ZEMBC",
     "email": "mjiang2000@gmail.com",
-    "base_amount": 42.84,
-    "tax_amount": 2.14,
+    "base_amount": 10,
+    "tax_amount": 1.3,
     "shipping_method": "pickup",
-    "shipping_method_name": "In Store Pickup",
-    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
-    "shipping_amount": 0.0,
-    "total_amount": 44.98,
+    "shipping_method_name": "pickup",
+    "shipping_method_description": "pickup",
+    "shipping_amount": 0,
+    "total_amount": 11.3,
     "is_tax_included": true,
     "billing_address": {
         "id": null,
@@ -320,11 +151,11 @@ Bearer token
         "first_name": null,
         "Last_name": null,
         "company_name": null,
-        "street_1": "7 Danbury court",
+        "street_1": "8 Danbury court",
         "street_2": null,
         "city": "Markham",
         "country": "Canada",
-        "province": "BC",
+        "province": "ON",
         "postal_code": "L3R7S1",
         "phone": "416-2728539",
         "email": "mjiang2000@hotmail.com",
@@ -336,47 +167,40 @@ Bearer token
         "first_name": null,
         "Last_name": null,
         "company_name": null,
-        "street_1": "7 Danbury court",
+        "street_1": "8 Danbury court",
         "street_2": null,
         "city": "Markham",
         "country": "Canada",
-        "province": "BC",
+        "province": "ON",
         "postal_code": "L3R7S1",
         "phone": "416-2728539",
         "email": "mjiang2000@hotmail.com",
         "is_default": false
     },
-    "created_at": "2020-08-25T16:15:07.6588348Z",
-    "updated_at": "2020-08-25T17:49:23.83497Z",
+    "created_at": "2020-06-23T00:58:50.6652118Z",
+    "updated_at": "2020-06-23T00:59:13.765005Z",
     "status": "new",
     "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
+    "supplier_merchant_name": null,
     "line_items": [
         {
-            "bcin": "9KBZJAL",
+            "bcin": "SAMUVRY",
             "sku": null,
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "quantity": 2,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
-            "list_price": 21.42,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
             "sale_price": null,
             "merchant_id": "beeshop",
-            "tax_code": "regular",
-            "weight": 0.0
+            "tax_code": null,
+            "weight": 0
         }
     ],
-    "merchant_order_number": null,
+    "merchant_order_number": "BSCM1-ZEMBC-145",
     "refunded": false,
     "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "payment_received": 54.84,
-    "payment_refunded": 0.0,
-    "transaction_fee": 0.0,
-    "total_payout": 9.86,
-    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
     "document_type": "merchant_order"
-    }
+}
 ```
 {% endapi-method-response-example %}
 
@@ -679,17 +503,18 @@ Bearer token
 
 ```text
 {
-    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
+    "id": "mo-39f413f0-176e-44dd-852e-590f994917e5",
+    "jielong_id": "39f413f0-176e-44dd-852e-590f994917e5",
     "user_id": "mjiang2000@gmail.com",
     "micro_merchant_id": "ZEMBC",
     "email": "mjiang2000@gmail.com",
-    "base_amount": 42.84,
-    "tax_amount": 2.14,
+    "base_amount": 10,
+    "tax_amount": 1.3,
     "shipping_method": "pickup",
-    "shipping_method_name": "In Store Pickup",
-    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
-    "shipping_amount": 0.0,
-    "total_amount": 44.98,
+    "shipping_method_name": "pickup",
+    "shipping_method_description": "pickup",
+    "shipping_amount": 0,
+    "total_amount": 11.3,
     "is_tax_included": true,
     "billing_address": {
         "id": null,
@@ -697,11 +522,11 @@ Bearer token
         "first_name": null,
         "Last_name": null,
         "company_name": null,
-        "street_1": "7 Danbury court",
+        "street_1": "8 Danbury court",
         "street_2": null,
         "city": "Markham",
         "country": "Canada",
-        "province": "BC",
+        "province": "ON",
         "postal_code": "L3R7S1",
         "phone": "416-2728539",
         "email": "mjiang2000@hotmail.com",
@@ -713,47 +538,40 @@ Bearer token
         "first_name": null,
         "Last_name": null,
         "company_name": null,
-        "street_1": "7 Danbury court",
+        "street_1": "8 Danbury court",
         "street_2": null,
         "city": "Markham",
         "country": "Canada",
-        "province": "BC",
+        "province": "ON",
         "postal_code": "L3R7S1",
         "phone": "416-2728539",
         "email": "mjiang2000@hotmail.com",
         "is_default": false
     },
-    "created_at": "2020-08-25T16:15:07.6588348Z",
-    "updated_at": "2020-08-25T17:49:23.83497Z",
+    "created_at": "2020-06-23T00:58:50.6652118Z",
+    "updated_at": "2020-06-23T00:59:13.765005Z",
     "status": "new",
     "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
+    "supplier_merchant_name": null,
     "line_items": [
         {
-            "bcin": "9KBZJAL",
+            "bcin": "SAMUVRY",
             "sku": null,
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "quantity": 2,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
-            "list_price": 21.42,
+            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
+            "quantity": 1,
+            "image_url": null,
+            "list_price": 10,
             "sale_price": null,
             "merchant_id": "beeshop",
-            "tax_code": "regular",
-            "weight": 0.0
+            "tax_code": null,
+            "weight": 0
         }
     ],
-    "merchant_order_number": null,
+    "merchant_order_number": "BSCM1-ZEMBC-145",
     "refunded": false,
     "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "payment_received": 54.84,
-    "payment_refunded": 0.0,
-    "transaction_fee": 0.0,
-    "total_payout": 9.86,
-    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
     "document_type": "merchant_order"
-    }
+}
 ```
 {% endapi-method-response-example %}
 
@@ -884,16 +702,6 @@ Bearer token
 ```
 {% endapi-method-response-example %}
 
-{% api-method-response-example httpCode=400 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
 {% api-method-response-example httpCode=401 %}
 {% api-method-response-example-description %}
 
@@ -911,164 +719,6 @@ Bearer token
 
 ```text
 
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-{% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/merchantorder/ibv/{switch}" %}
-{% api-method-summary %}
-Enable IBV price of merchant order
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="switch" type="string" required=true %}
-y/n
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="jielongId" type="string" required=true %}
-jielong Id
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-{
-    "jielong_id": "4020e479-2015-4234-b39b-09c94f133b07",
-    "user_id": "mjiang2000@gmail.com",
-    "micro_merchant_id": "ZEMBC",
-    "email": "mjiang2000@gmail.com",
-    "base_amount": 42.84,
-    "tax_amount": 2.14,
-    "shipping_method": "pickup",
-    "shipping_method_name": "In Store Pickup",
-    "shipping_method_description": "Mon-Fri 9AM-5PM\n162 Torbay Rd., Markham, ON L3R 1G6",
-    "shipping_amount": 0.0,
-    "total_amount": 44.98,
-    "is_tax_included": true,
-    "billing_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "shipping_address": {
-        "id": null,
-        "full_name": "Jack Jiang",
-        "first_name": null,
-        "Last_name": null,
-        "company_name": null,
-        "street_1": "7 Danbury court",
-        "street_2": null,
-        "city": "Markham",
-        "country": "Canada",
-        "province": "BC",
-        "postal_code": "L3R7S1",
-        "phone": "416-2728539",
-        "email": "mjiang2000@hotmail.com",
-        "is_default": false
-    },
-    "created_at": "2020-08-25T16:15:07.6588348Z",
-    "updated_at": "2020-08-25T17:49:23.83497Z",
-    "status": "new",
-    "supplier_merchant_id": "beeshop",
-    "supplier_merchant_name": "Beeshop",
-    "line_items": [
-        {
-            "bcin": "9KBZJAL",
-            "sku": null,
-            "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
-            "quantity": 2,
-            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
-            "list_price": 21.42,
-            "sale_price": null,
-            "merchant_id": "beeshop",
-            "tax_code": "regular",
-            "weight": 0.0
-        }
-    ],
-    "merchant_order_number": null,
-    "refunded": false,
-    "is_cancellation_in_order": false,
-    "ibv_enabled": false,
-    "ibv_rate": 0.2,
-    "payment_received": 54.84,
-    "payment_refunded": 0.0,
-    "transaction_fee": 0.0,
-    "total_payout": 9.86,
-    "id": "mo-4020e479-2015-4234-b39b-09c94f133b07",
-    "document_type": "merchant_order"
-    }
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=403 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=404 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-
-```
-{% endapi-method-response-example %}
-
-{% api-method-response-example httpCode=422 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```
-"merchant order is not valid to update"
-"IBV price is not supported by supplier merchant"
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
