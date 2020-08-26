@@ -2189,3 +2189,15 @@ Get merchant order picking list
 {% endapi-method-spec %}
 {% endapi-method %}
 
+```text
+NOTE: Each line item has stock location info, which is major difference 
+comparing to normal line item in the merchant order object.
+
+  "stock_location": {
+                "aisle": "",
+                "bay": "",
+                "shelf": "",
+                "bin": ""
+            }
+```
+
