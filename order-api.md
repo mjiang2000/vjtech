@@ -909,15 +909,34 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-response-example-description %}
 
 ```text
-[
-    {
-        "bcin":"SAMUVRY",
-        "merchant_id":"beeshop",
-        "before_change":"5",
-        "after_change":"0",
-        "change_reason": "product_not_found"
-    }
-]
+{
+ "change_logs": [
+        {
+            "bcin":"SAMUVRY",
+           "line_item":lineitem*
+            "merchant_id":"beeshop",
+            "before_change":"5",
+            "after_change":"0",
+            "change_reason": "product_not_found"
+        },
+         {
+            "bcin":"SAMUVRY",
+           "line_item":lineitem*
+            "merchant_id":"beeshop",
+            "before_change":"5",
+            "after_change":"1",
+            "change_reason": "insufficient_inventory"
+        },
+         {
+            "bcin":"SAMUVRY",
+            "line_item":lineitem*,
+            "merchant_id":"beeshop",
+            "before_change":"10",
+            "after_change":"9",
+            "change_reason": "price_adjusted"
+        }
+    ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -1012,9 +1031,9 @@ jielong id. if order id is not generated, use jielong id to create a new order
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/amendment/item" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/amendment" %}
 {% api-method-summary %}
-Amend an item in order
+Amend order
 {% endapi-method-summary %}
 
 {% api-method-description %}
@@ -1127,18 +1146,27 @@ Invalid Input
 
 Request Body
 
-* the quantity is the number that changed to. For example, the original number is 5, it can be changed to 3, which means refund 2 items. As a result, 2 will be persisted in the order amendment for this item.
+* the quantity is the number that to be reduced from the original order.
 * One order amendment can contain multiple items
-* The order amendment must be refund successfully to be consider in the campaign close action
-* One order can have multiple amendments, the GUI should avoid guiding user creating multiple amendments. Unless in scenario that extract amendment is required when previous amendment has completed refund process. 
+* The order amendment must be refund successfully to be considered in the campaign close action
+* One order can have multiple amendments 
 
 ```text
 {
-        "bcin": "SAMUVRY",
-    "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-    "quantity": 1,
-    "merchant_id": "beeshop",
-        "list_price": 10.0
+    "line_items": [
+            {
+                    "bcin": "9KBZJAL",
+                    "quantity":2,
+                    "merchant_id": "beeshop"
+            },
+            {
+                    "bcin": "SAMUVRY",
+                    "quantity":2,
+                    "merchant_id": "beeshop"
+            }
+    ],
+    "shipping_amount": 3.0,
+    "note":"second amendment"
 }
 ```
 
