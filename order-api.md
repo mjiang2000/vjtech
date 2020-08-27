@@ -1180,6 +1180,166 @@ Request Body
 }
 ```
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/amendment" %}
+{% api-method-summary %}
+Get order amendment
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="order\_id" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "amendments": [
+        {
+            "order_amendment_id": "3cb39c83-eeea-44e9-8ba9-0fac5e94ace9",
+            "order_id": "3f5f61f0-d2c2-4ce8-bf3c-00bc2617a5cd",
+            "user_id": "mjiang2000@gmail.com",
+            "jielong_id": "750a31a1-5125-4413-84bf-ae9949b1fb9c",
+            "email": "mjiang2000@gmail.com",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "line_items": [
+                {
+                    "bcin": "9KBZJAL",
+                    "sku": null,
+                    "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+                    "quantity": 1,
+                    "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+                    "list_price": 27.42,
+                    "sale_price": null,
+                    "merchant_id": "beeshop",
+                    "tax_code": "regular",
+                    "weight": 0.0
+                }
+            ],
+            "base_amount": 27.42,
+            "shipping_method": null,
+            "shipping_method_name": null,
+            "shipping_method_description": null,
+            "shipping_amount": 0.0,
+            "total_amount": 27.42,
+            "created_at": "2020-08-26T17:57:26.0136382Z",
+            "updated_at": "2020-08-26T17:57:26.152041Z",
+            "status": "refunded",
+            "refund_id": "11cd6f03-a327-48a7-9ba7-9118d764add7",
+            "refund_gateway": "Spreedly",
+            "refund_provider": "VISA",
+            "order_number": "BSC1-1361",
+            "amended_by": "mjiang2000@gmail.com",
+            "note": null,
+            "id": "3cb39c83-eeea-44e9-8ba9-0fac5e94ace9",
+            "document_type": "order_amendment",
+            "_etag": "\"da062ed4-0000-0200-0000-5f46a2a70000\""
+        },
+        {
+            "order_amendment_id": "5d07f7d1-6a99-4f67-9279-7e8b49413766",
+            "order_id": "3f5f61f0-d2c2-4ce8-bf3c-00bc2617a5cd",
+            "user_id": "mjiang2000@gmail.com",
+            "jielong_id": "750a31a1-5125-4413-84bf-ae9949b1fb9c",
+            "email": "mjiang2000@gmail.com",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "line_items": [
+                {
+                    "bcin": "9KBZJAL",
+                    "sku": null,
+                    "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+                    "quantity": 1,
+                    "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+                    "list_price": 27.42,
+                    "sale_price": null,
+                    "merchant_id": "beeshop",
+                    "tax_code": "regular",
+                    "weight": 0.0
+                }
+            ],
+            "base_amount": 27.42,
+            "shipping_method": null,
+            "shipping_method_name": null,
+            "shipping_method_description": null,
+            "shipping_amount": 0.0,
+            "total_amount": 27.42,
+            "created_at": "2020-08-27T20:17:50.0878031Z",
+            "updated_at": "2020-08-27T20:17:50.092274Z",
+            "status": "refunded",
+            "refund_id": "7cc23bcb-1d83-4905-b1f6-2d2a0c82a1bf",
+            "refund_gateway": "Spreedly",
+            "refund_provider": "VISA",
+            "order_number": "BSC1-1361",
+            "amended_by": "mjiang2000@gmail.com",
+            "note": null,
+            "id": "5d07f7d1-6a99-4f67-9279-7e8b49413766",
+            "document_type": "order_amendment",
+            "_etag": "\"4f0549d7-0000-0200-0000-5f4815460000\""
+        }
+    ],
+    "remaining_order": {
+        "remainingLineItems": [
+            {
+                "bcin": "9KBZJAL",
+                "sku": null,
+                "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+                "quantity": 1,
+                "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+                "list_price": 27.42,
+                "sale_price": null,
+                "merchant_id": "beeshop",
+                "tax_code": "regular",
+                "weight": 0.0
+            }
+        ],
+        "remainingShippingAmount": 0.0
+    }
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
 {% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingquotes" %}
 {% api-method-summary %}
 Get shipping quotes
