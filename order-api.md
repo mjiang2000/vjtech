@@ -1142,7 +1142,12 @@ Invalid Input
 {% endapi-method-response-example-description %}
 
 ```text
-
+{
+    "message": "Invalid input",
+    "validation_errors": [
+        "line item 9KBZJAL: remaining qty(1) < amendment qty (2)"
+    ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
