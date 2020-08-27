@@ -1062,42 +1062,47 @@ the order to be amend
 {% endapi-method-response-example-description %}
 
 ```text
-{
-    "id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
-    "order_amendment_id": "4e0e412e-40f9-4dd0-8cb5-8fa08f8ef6ee",
-    "order_id": "577b066f-a30f-40a4-8951-077e2af1dadf",
-    "user_id": "mjiang2000@gmail.com",
-    "jielong_id": "ce59a172-41b9-4cef-9243-ce777cdf418d",
-    "email": null,
-    "merchant_id": "beeshop",
-    "merchant_name": "Beeshop",
-    "line_items": [
-        {
-            "bcin": "SAMUVRY",
-            "sku": null,
-            "title": "Made in Japan / Tempura Paper  天妇罗纸*吸油纸(50 sheets)",
-            "quantity": 1,
-            "image_url": null,
-            "list_price": 10,
-            "sale_price": null,
+  {
+            "order_amendment_id": "5d07f7d1-6a99-4f67-9279-7e8b49413766",
+            "order_id": "3f5f61f0-d2c2-4ce8-bf3c-00bc2617a5cd",
+            "user_id": "mjiang2000@gmail.com",
+            "jielong_id": "750a31a1-5125-4413-84bf-ae9949b1fb9c",
+            "email": "mjiang2000@gmail.com",
             "merchant_id": "beeshop",
-            "weight": 0
+            "merchant_name": "Beeshop",
+            "line_items": [
+                {
+                    "bcin": "9KBZJAL",
+                    "sku": null,
+                    "title": "Made in Japan / Moritoku Traditional Japanese Ceramic Plate (5-piece set)",
+                    "quantity": 1,
+                    "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/9KBZJAL-4964549034550-01.jpg",
+                    "list_price": 27.42,
+                    "sale_price": null,
+                    "merchant_id": "beeshop",
+                    "tax_code": "regular",
+                    "weight": 0.0
+                }
+            ],
+            "base_amount": 27.42,
+            "shipping_method": null,
+            "shipping_method_name": null,
+            "shipping_method_description": null,
+            "shipping_amount": 0.0,
+            "total_amount": 27.42,
+            "created_at": "2020-08-27T20:17:50.0878031Z",
+            "updated_at": "2020-08-27T20:17:50.092274Z",
+            "status": "refunded",
+            "refund_id": "7cc23bcb-1d83-4905-b1f6-2d2a0c82a1bf",
+            "refund_gateway": "Spreedly",
+            "refund_provider": "VISA",
+            "order_number": "BSC1-1361",
+            "amended_by": "mjiang2000@gmail.com",
+            "note": "customer request",
+            "id": "5d07f7d1-6a99-4f67-9279-7e8b49413766",
+            "document_type": "order_amendment",
+            "_etag": "\"4f0549d7-0000-0200-0000-5f4815460000\""
         }
-    ],
-    "base_amount": 10,
-    "shipping_method": null,
-    "shipping_method_name": null,
-    "shipping_method_description": null,
-    "shipping_amount": 0,
-    "total_amount": 10,
-    "created_at": "2020-06-08T02:55:38.9553867Z",
-    "updated_at": "2020-06-08T02:55:41.2548526Z",
-    "status": "new",
-    "refund_id": null,
-    "order_number": "BSC20-40",
-    "amended_by": "mjiang2000@gmail.com",
-    "document_type": "order_amendment"
-}
 ```
 {% endapi-method-response-example %}
 
