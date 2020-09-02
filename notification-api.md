@@ -115,6 +115,57 @@ Message schema
 }
 ```
 
+{% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/notification/device" %}
+{% api-method-summary %}
+Send notification to device
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bear token
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request body
+
+```text
+{
+    "audience_type":"group", //supported type: group or user
+    "audience_id":"Ee1TuUKQKY9jT42kM43m", //id of the group or user
+    "audience_option": "excludeMe", //optional
+    "message": {
+       "en": "English Message",
+        "zh-Hans": "简体消息",
+        "zh-Hant": "簡體消息"
+    }
+    "data":  
+    {
+        "boo":"foo"
+    }
+}
+```
+
 {% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/invitetogroup" %}
 {% api-method-summary %}
 Invite user to group
