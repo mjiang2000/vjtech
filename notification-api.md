@@ -38,7 +38,7 @@ firebase.auth().signInWithCustomToken(customToken)
 
 {% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/notification/inapp" %}
 {% api-method-summary %}
-Send notification to user/group
+Send in-app notification to user/group
 {% endapi-method-summary %}
 
 {% api-method-description %}
