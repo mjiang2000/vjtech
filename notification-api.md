@@ -4,7 +4,7 @@ description: >-
   different pattern
 ---
 
-# Notification API
+# Firebase API
 
 | Env | base Url |
 | :--- | :--- |
@@ -36,7 +36,7 @@ firebase.auth().signInWithCustomToken(customToken)
 
 
 
-{% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/notification" %}
+{% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/notification/inapp" %}
 {% api-method-summary %}
 Send notification to user/group
 {% endapi-method-summary %}
@@ -96,10 +96,10 @@ Request body
 }
 ```
 
-To subscribe to the notification, set listener to firebase collection "messages" under "notifications" collection
+To subscribe to the notification, set listener to firebase collection "groups" under "notifications" collection
 
 ```text
-db.collection("notifications").doc("current_user_id").collection("messages")
+db.collection("notifications").doc("current_user_id").collection("groups")
 .where(
     //filter by timestamp
 )
@@ -112,6 +112,49 @@ Message schema
     "timestamp":"2020-07-15T17:16:11Z",
     "content_schema":"chat",
     "content":{}
+}
+```
+
+{% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/invitetogroup" %}
+{% api-method-summary %}
+Invite user to group
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+firebase id token
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "status": true //successfully added, false= already member of the group
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+```text
+{
+    "group_id":"u7zCtDv5dD5dzSQoywcq",
+    "user_id":"mjiang2000@gmail.com"
 }
 ```
 
