@@ -1591,3 +1591,63 @@ Request Body
         }
 ```
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/journals" %}
+{% api-method-summary %}
+Order Journal list
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="order\_id" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+action: paid, refunded, shipped, received  
+reference\_id: payment\_id\(paid\), order\_amendment\_id\(refunded\)
+{% endapi-method-response-example-description %}
+
+```
+[
+    {
+        "order_id": "1c164786-4318-400a-996e-a7e037c6c3ce",
+        "action": "paid",
+        "occurred_at": "2020-09-16T17:53:55.0835567Z",
+        "amount": "54.84",
+        "reference_id": "aaac4dec-b3fc-48aa-b09e-ae7fa63c5580",
+        "properties": null,
+        "id": "ddcd36b3-04ca-4eea-b0e2-194b994ca81f",
+        "document_type": "order_journal",
+    },
+    {
+        "order_id": "1c164786-4318-400a-996e-a7e037c6c3ce",
+        "action": "refunded",
+        "occurred_at": "2020-09-16T17:55:02.8259241Z",
+        "amount": "0.01",
+        "reference_id": "8e5dabbb-3d22-4c5e-81e8-a6e86e2dec82",
+        "properties": null,
+        "id": "18858b45-ec04-4bdd-b92a-d205726772e7",
+        "document_type": "order_journal",
+    }
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
