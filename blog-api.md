@@ -292,7 +292,7 @@ Bearer token
             "language": "en",
             "id": "4c087f05-270c-4a60-91e3-426bdbedbb95",
             "document_type": "blog"
-         },
+         }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
@@ -309,7 +309,7 @@ Request body
             "description_markup": null,
             "jielong_id": null,
             "language": "en"
-         },
+         }
 ```
 
 {% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/blog/:blogId" %}
@@ -347,10 +347,39 @@ bearer token
 {% endapi-method-response-example-description %}
 
 ```
-
+    {
+            "merchant_id": "ZEMBC",
+            "merchant_name": "mjiang2000@gmail.com",
+            "title": "third post",
+            "image": null,
+            "description": "test 3",
+            "description_markup": null,
+            "author_id": "mjiang2000@gmail.com",
+            "author_name": "Min Jiang",
+            "updated_at": "2020-08-31T20:37:07.6270371Z",
+            "blog_id": "4c087f05-270c-4a60-91e3-426bdbedbb95",
+            "jielong_id": null,
+            "status": "private",
+            "language": "en",
+            "id": "4c087f05-270c-4a60-91e3-426bdbedbb95",
+            "document_type": "blog"
+         }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
+
+Request body
+
+```text
+     {
+            "title": "third post",  //optional
+            "image": null,           //optional      
+            "description": "test 3",  //required
+            "description_markup": null, //optional
+            "jielong_id": null,       //optional
+            "status:": "public"       //optional             
+         }
+```
 
