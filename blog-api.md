@@ -257,13 +257,13 @@ blog is created as Private status, use put api to update the private status to p
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="merchantId" type="string" required=false %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -324,17 +324,17 @@ Update a blog
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="blogId" type="string" required=false %}
+{% api-method-parameter name="blogId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="merchantId" type="string" required=false %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -395,17 +395,17 @@ Create a blog image
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-path-parameters %}
-{% api-method-parameter name="blogId" type="string" required=false %}
+{% api-method-parameter name="blogId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 
-{% api-method-parameter name="merchantId" type="string" required=false %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
@@ -425,6 +425,48 @@ Create a blog image
 
 ```
 { "image": imageUrl }
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="delete" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/blog/:blogId/image " %}
+{% api-method-summary %}
+Delete a blog image
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="blogId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
