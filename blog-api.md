@@ -457,6 +457,12 @@ Delete a blog image
 Bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="url" type="string" required=true %}
+image url \(url encoded\)
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -466,7 +472,7 @@ Bearer token
 {% endapi-method-response-example-description %}
 
 ```
-
+{ "image": imageUrl }
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
