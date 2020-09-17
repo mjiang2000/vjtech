@@ -10,4 +10,5 @@
 * [Payment API](payment-api.md)
 * [Management API](management-api.md)
 * [Firebase API](notification-api.md)
+* [Blog API](blog-api.md)
 

@@ -1,0 +1,105 @@
+# Blog API
+
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/bloglist " %}
+{% api-method-summary %}
+Get a blog list by micro merchant \(for editing\)
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authentication" type="string" required=true %}
+bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="status" type="string" required=false %}
+public, private \(use "\|" to concatenate multiple status\) 
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="continuation\_token" type="string" required=false %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="page\_size" type="string" required=false %}
+default 5
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Cake successfully retrieved.
+{% endapi-method-response-example-description %}
+
+```
+{
+    "has_more": false,
+    "continuation_token": null,
+    "results": [
+        {
+            "merchant_id": "ZEMBC",
+            "merchant_name": "mjiang2000@gmail.com",
+            "title": "third post",
+            "image": null,
+            "description": "test 3",
+            "description_markup": null,
+            "author_id": "mjiang2000@gmail.com",
+            "author_name": "Min Jiang",
+            "updated_at": "2020-08-31T20:37:07.6270371Z",
+            "blog_id": "4c087f05-270c-4a60-91e3-426bdbedbb95",
+            "jielong_id": null,
+            "status": "private",
+            "language": "en",
+            "id": "4c087f05-270c-4a60-91e3-426bdbedbb95",
+            "document_type": "blog"
+         },
+        {
+            "merchant_id": "ZEMBC",
+            "merchant_name": "mjiang2000@gmail.com",
+            "title": "third post",
+            "image": null,
+            "description": "test 3",
+            "description_markup": null,
+            "author_id": "mjiang2000@gmail.com",
+            "author_name": "Min Jiang",
+            "updated_at": "2020-08-31T20:35:58.8560682Z",
+            "blog_id": "67fdbf95-3bd4-4893-888b-2dc479b79671",
+            "jielong_id": null,
+            "status": "private",
+            "language": "en",
+            "id": "67fdbf95-3bd4-4893-888b-2dc479b79671",
+            "document_type": "blog"
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+Could not find a cake matching this query.
+{% endapi-method-response-example-description %}
+
+```
+{    "message": "Ain't no cake like that."}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
