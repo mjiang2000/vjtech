@@ -251,7 +251,7 @@ Create a blog
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+blog is created as Private status, use put api to update the private status to public
 {% endapi-method-description %}
 
 {% api-method-spec %}
