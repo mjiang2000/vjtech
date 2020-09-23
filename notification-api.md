@@ -61,7 +61,7 @@ Cake successfully retrieved.
 {% endapi-method-response-example-description %}
 
 ```
-{ "done": "done"}
+{ "status": "ok"}
 ```
 {% endapi-method-response-example %}
 
@@ -140,7 +140,7 @@ Bear token
 {% endapi-method-response-example-description %}
 
 ```
-
+{ "status": "ok"}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
