@@ -18,6 +18,12 @@ Bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="original" type="string" required=false %}
+y/n  
+y: as the same state when order is placed.  
+n: apply order amendments to original order
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="new" type="string" required=false %}
 y/n. force to create a new order.
 {% endapi-method-parameter %}
