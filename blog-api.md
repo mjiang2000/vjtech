@@ -91,7 +91,7 @@ Cake successfully retrieved.
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/blog/search" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/blog/search" %}
 {% api-method-summary %}
 Search blogs 
 {% endapi-method-summary %}
@@ -177,7 +177,7 @@ Request body
 }
 ```
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/blog/:blogId" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/blog/:blogId" %}
 {% api-method-summary %}
 Get a blog
 {% endapi-method-summary %}
