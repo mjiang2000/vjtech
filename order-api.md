@@ -1629,7 +1629,8 @@ reference\_id: payment\_id\(paid\), order\_amendment\_id\(refunded\)
 {% endapi-method-response-example-description %}
 
 ```
-[
+{
+ "journals": [
     {
         "order_id": "1c164786-4318-400a-996e-a7e037c6c3ce",
         "action": "paid",
@@ -1650,7 +1651,8 @@ reference\_id: payment\_id\(paid\), order\_amendment\_id\(refunded\)
         "id": "18858b45-ec04-4bdd-b92a-d205726772e7",
         "document_type": "order_journal",
     }
-]
+ ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
