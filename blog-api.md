@@ -177,7 +177,7 @@ Request body
 }
 ```
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/blog/:blogId" %}
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/blog/v1" path="/merchant/:merchantId/blog/:blogId" %}
 {% api-method-summary %}
 Get a blog
 {% endapi-method-summary %}
