@@ -228,7 +228,7 @@ Bearer token
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="fill\_language" type="string" required=false %}
-y/n,   
+y/n \(default is n\)  
 if y, populate 'zh-Hans', 'zh-Hant' by English values for fields \(title, description, brand, unit and tags\), existing values will be overwritten,  
 if n, no language package data will be affected
 {% endapi-method-parameter %}
@@ -447,7 +447,7 @@ Bearer token
 
 {% api-method-query-parameters %}
 {% api-method-parameter name="fill\_language" type="string" required=false %}
-
+y/n \(default is n\)
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="skipmedia" type="string" required=false %}
