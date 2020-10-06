@@ -509,3 +509,58 @@ Bearer token
 {% endapi-method-spec %}
 {% endapi-method %}
 
+```text
+{
+   "group_id": auto_id,
+   "group_owner_id": user_id,
+   "is_group_chat": true //true: group chat, false conversation in 2 members
+   other fields ...
+}
+```
+
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/user" %}
+{% api-method-summary %}
+Update user name
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+bearer token
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+ *user
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request body
+
+```text
+{
+    "given_name": "Min3", //optional
+    "family_name": "Jiang3", //optional
+    "name":"Jack Jiang Gmail3" //optional
+}
+```
+
+
+
