@@ -1640,12 +1640,7 @@ bearer token
     "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-7f835c4b-3e53-4823-bbbe-ae224382c73d-backup.png",
     "updated_at": "2020-10-19T18:11:40.0689603Z",
     "id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
-    "document_type": "merchant_jielong_template",
-    "_etag": "\"e706b2ab-0000-0200-0000-5f8dd6dc0000\"",
-    "_rid": "dhoXALoFRSa2BQAAAAAAAA==",
-    "_self": "dbs/dhoXAA==/colls/dhoXALoFRSY=/docs/dhoXALoFRSa2BQAAAAAAAA==/",
-    "_attachments": "attachments/",
-    "_ts": 1603131100
+    "document_type": "merchant_jielong_template"
 }
 ```
 {% endapi-method-response-example %}
@@ -1739,68 +1734,124 @@ bearer token
 
 ```
 {
-    "id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
     "merchant_id": "beeshop",
-    "jielong_template_id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
+    "merchant_name": "Beeshop",
+    "jielong_template_id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
     "listed_products": [
         {
-            "bcin": "SAMUVRY",
-            "title": "日本制* 健康厨房必备天妇罗纸*吸油纸(50 sheets)",
+            "bcin": "WLL7BXN",
+            "title": "Made in Japan / Moritoku Insulated Bento Box Lunch Box (Dark Blue)",
             "media": [
                 {
-                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-01.jpg",
-                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-01.jpg",
-                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-01.jpg",
-                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
-                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-01.jpg",
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-01.jpg",
                     "type": "image/jpeg",
                     "order": 9999
                 },
                 {
-                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-02.jpg",
-                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-02.jpg",
-                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-02.jpg",
-                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-02.jpg",
-                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-02.jpg",
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-02.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-02.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-02.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-02.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-02.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-03.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-03.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-03.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-03.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-03.jpg",
                     "type": "image/jpeg",
                     "order": 9999
                 }
             ],
             "language": "en",
+            "unit": "",
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
-            "sku": "MT-AC-01",
+            "sku": "MTKLU-02",
             "price": {
                 "currency": "CAD",
-                "list": 7.52,
-                "msrp": 10,
+                "list": 15,
+                "msrp": 17.25,
                 "cost": null,
-                "gb_price": 6.12
+                "gb_price": 10.09
             },
             "listed_by": "template",
-            "listed_at": "2020-08-04T18:31:46.0650389Z",
+            "listed_at": "2020-10-19T18:11:40.0689592Z",
             "stay_on_top": true
-        }],
+        },
+        {
+            "bcin": "U9PES6J",
+            "title": "Moritoku Tritan Leak-Proofed One-Touch Water Bottle 500ML (Pink)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/U9PES6J-4964549037650-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/U9PES6J-4964549037650-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/U9PES6J-4964549037650-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/U9PES6J-4964549037650-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/U9PES6J-4964549037650-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
             "language": "en",
+            "unit": "",
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
-            "sku": "B0369",
+            "sku": "MTWBL-4",
             "price": {
                 "currency": "CAD",
-                "list": 27.42,
-                "msrp": 35,
+                "list": 7.01,
+                "msrp": 8.06,
                 "cost": null,
-                "gb_price": 21.42
+                "gb_price": 4.71
             },
             "listed_by": "template",
-            "listed_at": "2020-08-04T18:31:46.0650392Z",
+            "listed_at": "2020-10-19T18:11:40.0689597Z",
+            "stay_on_top": true
+        },
+        {
+            "bcin": "R7R923V",
+            "title": "Moritoku Tritan Leak-Proofed One-Touch Water Bottle 500ML (Black)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/R7R923V-4964549037667-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/R7R923V-4964549037667-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/R7R923V-4964549037667-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/R7R923V-4964549037667-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/R7R923V-4964549037667-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
+            "language": "en",
+            "unit": "",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "sku": "MTWBL-5",
+            "price": {
+                "currency": "CAD",
+                "list": 7.01,
+                "msrp": 8.06,
+                "cost": null,
+                "gb_price": 4.71
+            },
+            "listed_by": "template",
+            "listed_at": "2020-10-19T18:11:40.0689601Z",
             "stay_on_top": true
         }
     ],
-    "name": "Jielong Template 1",
-    "description": "first jielong template",
-    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-8fd3da90-61f3-44e6-82c1-783cc0251da4-groupby.jpg",
-    "updated_at": "2020-08-04T18:31:48.7770926Z",
+    "name": "Hot hot hot!",
+    "description": "HOT HOT HOT",
+    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-7f835c4b-3e53-4823-bbbe-ae224382c73d-backup.png",
+    "updated_at": "2020-10-19T18:11:40.0689603Z",
+    "id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
     "document_type": "merchant_jielong_template"
 }
 ```
@@ -1865,68 +1916,124 @@ bearer token
 
 ```
 {
-    "id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
     "merchant_id": "beeshop",
-    "jielong_template_id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
+    "merchant_name": "Beeshop",
+    "jielong_template_id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
     "listed_products": [
         {
-            "bcin": "SAMUVRY",
-            "title": "日本制* 健康厨房必备天妇罗纸*吸油纸(50 sheets)",
+            "bcin": "WLL7BXN",
+            "title": "Made in Japan / Moritoku Insulated Bento Box Lunch Box (Dark Blue)",
             "media": [
                 {
-                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-01.jpg",
-                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-01.jpg",
-                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-01.jpg",
-                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
-                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-01.jpg",
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-01.jpg",
                     "type": "image/jpeg",
                     "order": 9999
                 },
                 {
-                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-02.jpg",
-                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-02.jpg",
-                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-02.jpg",
-                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-02.jpg",
-                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-02.jpg",
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-02.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-02.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-02.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-02.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-02.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-03.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-03.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-03.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-03.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-03.jpg",
                     "type": "image/jpeg",
                     "order": 9999
                 }
             ],
             "language": "en",
+            "unit": "",
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
-            "sku": "MT-AC-01",
+            "sku": "MTKLU-02",
             "price": {
                 "currency": "CAD",
-                "list": 7.52,
-                "msrp": 10,
+                "list": 15,
+                "msrp": 17.25,
                 "cost": null,
-                "gb_price": 6.12
+                "gb_price": 10.09
             },
             "listed_by": "template",
-            "listed_at": "2020-08-04T18:31:46.0650389Z",
+            "listed_at": "2020-10-19T18:11:40.0689592Z",
             "stay_on_top": true
-        }],
+        },
+        {
+            "bcin": "U9PES6J",
+            "title": "Moritoku Tritan Leak-Proofed One-Touch Water Bottle 500ML (Pink)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/U9PES6J-4964549037650-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/U9PES6J-4964549037650-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/U9PES6J-4964549037650-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/U9PES6J-4964549037650-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/U9PES6J-4964549037650-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
             "language": "en",
+            "unit": "",
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
-            "sku": "B0369",
+            "sku": "MTWBL-4",
             "price": {
                 "currency": "CAD",
-                "list": 27.42,
-                "msrp": 35,
+                "list": 7.01,
+                "msrp": 8.06,
                 "cost": null,
-                "gb_price": 21.42
+                "gb_price": 4.71
             },
             "listed_by": "template",
-            "listed_at": "2020-08-04T18:31:46.0650392Z",
+            "listed_at": "2020-10-19T18:11:40.0689597Z",
+            "stay_on_top": true
+        },
+        {
+            "bcin": "R7R923V",
+            "title": "Moritoku Tritan Leak-Proofed One-Touch Water Bottle 500ML (Black)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/R7R923V-4964549037667-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/R7R923V-4964549037667-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/R7R923V-4964549037667-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/R7R923V-4964549037667-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/R7R923V-4964549037667-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
+            "language": "en",
+            "unit": "",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "sku": "MTWBL-5",
+            "price": {
+                "currency": "CAD",
+                "list": 7.01,
+                "msrp": 8.06,
+                "cost": null,
+                "gb_price": 4.71
+            },
+            "listed_by": "template",
+            "listed_at": "2020-10-19T18:11:40.0689601Z",
             "stay_on_top": true
         }
     ],
-    "name": "Jielong Template 1",
-    "description": "first jielong template",
-    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-8fd3da90-61f3-44e6-82c1-783cc0251da4-groupby.jpg",
-    "updated_at": "2020-08-04T18:31:48.7770926Z",
+    "name": "Hot hot hot!",
+    "description": "HOT HOT HOT",
+    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-7f835c4b-3e53-4823-bbbe-ae224382c73d-backup.png",
+    "updated_at": "2020-10-19T18:11:40.0689603Z",
+    "id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
     "document_type": "merchant_jielong_template"
 }
 ```
@@ -2035,68 +2142,124 @@ path to image
 
 ```
 {
-    "id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
     "merchant_id": "beeshop",
-    "jielong_template_id": "8fd3da90-61f3-44e6-82c1-783cc0251da4",
+    "merchant_name": "Beeshop",
+    "jielong_template_id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
     "listed_products": [
         {
-            "bcin": "SAMUVRY",
-            "title": "日本制* 健康厨房必备天妇罗纸*吸油纸(50 sheets)",
+            "bcin": "WLL7BXN",
+            "title": "Made in Japan / Moritoku Insulated Bento Box Lunch Box (Dark Blue)",
             "media": [
                 {
-                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-01.jpg",
-                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-01.jpg",
-                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-01.jpg",
-                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
-                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-01.jpg",
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-01.jpg",
                     "type": "image/jpeg",
                     "order": 9999
                 },
                 {
-                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/SAMUVRY-4991087345671-02.jpg",
-                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/SAMUVRY-4991087345671-02.jpg",
-                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/SAMUVRY-4991087345671-02.jpg",
-                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-02.jpg",
-                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/SAMUVRY-4991087345671-02.jpg",
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-02.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-02.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-02.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-02.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-02.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                },
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/WLL7BXN-4964549034123-03.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/WLL7BXN-4964549034123-03.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/WLL7BXN-4964549034123-03.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/WLL7BXN-4964549034123-03.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/WLL7BXN-4964549034123-03.jpg",
                     "type": "image/jpeg",
                     "order": 9999
                 }
             ],
             "language": "en",
+            "unit": "",
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
-            "sku": "MT-AC-01",
+            "sku": "MTKLU-02",
             "price": {
                 "currency": "CAD",
-                "list": 7.52,
-                "msrp": 10,
+                "list": 15,
+                "msrp": 17.25,
                 "cost": null,
-                "gb_price": 6.12
+                "gb_price": 10.09
             },
             "listed_by": "template",
-            "listed_at": "2020-08-04T18:31:46.0650389Z",
+            "listed_at": "2020-10-19T18:11:40.0689592Z",
             "stay_on_top": true
-        }],
+        },
+        {
+            "bcin": "U9PES6J",
+            "title": "Moritoku Tritan Leak-Proofed One-Touch Water Bottle 500ML (Pink)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/U9PES6J-4964549037650-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/U9PES6J-4964549037650-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/U9PES6J-4964549037650-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/U9PES6J-4964549037650-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/U9PES6J-4964549037650-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
             "language": "en",
+            "unit": "",
             "merchant_id": "beeshop",
             "merchant_name": "Beeshop",
-            "sku": "B0369",
+            "sku": "MTWBL-4",
             "price": {
                 "currency": "CAD",
-                "list": 27.42,
-                "msrp": 35,
+                "list": 7.01,
+                "msrp": 8.06,
                 "cost": null,
-                "gb_price": 21.42
+                "gb_price": 4.71
             },
             "listed_by": "template",
-            "listed_at": "2020-08-04T18:31:46.0650392Z",
+            "listed_at": "2020-10-19T18:11:40.0689597Z",
+            "stay_on_top": true
+        },
+        {
+            "bcin": "R7R923V",
+            "title": "Moritoku Tritan Leak-Proofed One-Touch Water Bottle 500ML (Black)",
+            "media": [
+                {
+                    "url": "https://bc01dmedia.blob.core.windows.net/product-image/R7R923V-4964549037667-01.jpg",
+                    "thumbnail_url": "https://bc01dmedia.blob.core.windows.net/product-image-t/R7R923V-4964549037667-01.jpg",
+                    "small_url": "https://bc01dmedia.blob.core.windows.net/product-image-s/R7R923V-4964549037667-01.jpg",
+                    "medium_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/R7R923V-4964549037667-01.jpg",
+                    "large_url": "https://bc01dmedia.blob.core.windows.net/product-image-l/R7R923V-4964549037667-01.jpg",
+                    "type": "image/jpeg",
+                    "order": 9999
+                }
+            ],
+            "language": "en",
+            "unit": "",
+            "merchant_id": "beeshop",
+            "merchant_name": "Beeshop",
+            "sku": "MTWBL-5",
+            "price": {
+                "currency": "CAD",
+                "list": 7.01,
+                "msrp": 8.06,
+                "cost": null,
+                "gb_price": 4.71
+            },
+            "listed_by": "template",
+            "listed_at": "2020-10-19T18:11:40.0689601Z",
             "stay_on_top": true
         }
     ],
-    "name": "Jielong Template 1",
-    "description": "first jielong template",
-    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-8fd3da90-61f3-44e6-82c1-783cc0251da4-groupby.jpg",
-    "updated_at": "2020-08-04T18:31:48.7770926Z",
+    "name": "Hot hot hot!",
+    "description": "HOT HOT HOT",
+    "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-7f835c4b-3e53-4823-bbbe-ae224382c73d-backup.png",
+    "updated_at": "2020-10-19T18:11:40.0689603Z",
+    "id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
     "document_type": "merchant_jielong_template"
 }
 ```
