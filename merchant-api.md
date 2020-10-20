@@ -1486,7 +1486,7 @@ Request Body
     "status":"received"
 ```
 
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/jielongtemplate/:merchantTemplateId" %}
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/jielongtemplate/:jielongTemplateId" %}
 {% api-method-summary %}
 Get a Jielong Template
 {% endapi-method-summary %}
