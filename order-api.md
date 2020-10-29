@@ -967,10 +967,6 @@ Bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="new" type="string" required=false %}
-y/n. force to create a new order.
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="order\_id" type="string" required=false %}
 order id. If order is is provided, jielong id can be ingore for better performance
 {% endapi-method-parameter %}
@@ -1629,7 +1625,8 @@ reference\_id: payment\_id\(paid\), order\_amendment\_id\(refunded\)
 {% endapi-method-response-example-description %}
 
 ```
-[
+{
+ "journals": [
     {
         "order_id": "1c164786-4318-400a-996e-a7e037c6c3ce",
         "action": "paid",
@@ -1650,7 +1647,8 @@ reference\_id: payment\_id\(paid\), order\_amendment\_id\(refunded\)
         "id": "18858b45-ec04-4bdd-b92a-d205726772e7",
         "document_type": "order_journal",
     }
-]
+ ]
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
