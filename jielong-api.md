@@ -447,10 +447,10 @@ Bearer token
 
 {% api-method-response-example httpCode=422 %}
 {% api-method-response-example-description %}
-If jielong has no active orders, it cannot be closed
+If  jielong has no active orders, it cannot be closed
 {% endapi-method-response-example-description %}
 
-```text
+```
 No active order found.
 ```
 {% endapi-method-response-example %}
@@ -464,7 +464,7 @@ Cancel a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-A jielong, which has enabled beeshop pay, cannot be Cancelled if there is submitted orders.
+A jielong,  which has enabled beeshop pay,  cannot be Cancelled if there is submitted orders.
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -510,7 +510,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -527,7 +527,7 @@ Bearer token
 
 {% api-method-response-example httpCode=422 %}
 {% api-method-response-example-description %}
-A jielong enabled beeshop pay cannot be Cancelled if there is submitted orders.
+ A jielong enabled beeshop pay cannot be Cancelled if there is submitted orders.
 {% endapi-method-response-example-description %}
 
 ```text
@@ -1614,7 +1614,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 {
     "image": "https://bc01dmedialocal.blob.core.windows.net/group-image/testgroup-groupby.jpg"
 }
@@ -1626,7 +1626,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -1636,7 +1636,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -1650,7 +1650,7 @@ Get Default Avatar
 {% endapi-method-summary %}
 
 {% api-method-description %}
-return image url
+return image url 
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -1674,7 +1674,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 {"image": "https://bc01dmedia.blob.core.windows.net/group-image/fasdfwefaf-default.png")
 ```
 {% endapi-method-response-example %}
@@ -1713,7 +1713,7 @@ Bearer token
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 jielong*
 ```
 {% endapi-method-response-example %}
@@ -1723,7 +1723,7 @@ jielong*
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -1733,7 +1733,7 @@ jielong*
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -1743,7 +1743,7 @@ jielong*
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 
 ```
 {% endapi-method-response-example %}
@@ -1753,158 +1753,10 @@ jielong*
 
 {% endapi-method-response-example-description %}
 
-```text
+```
 Cancelled or closed jielong cannot be updated
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
-
-{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/group/v1" path="/jielong/:jielongId/order/:orderId/print" %}
-{% api-method-summary %}
-Print customer order
-{% endapi-method-summary %}
-
-{% api-method-description %}
-
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="orderId" type="string" required=true %}
-
-{% endapi-method-parameter %}
-
-{% api-method-parameter name="jielongId" type="string" required=true %}
-
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
-
-{% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer token
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
-
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-content-type: text/html
-{% endapi-method-response-example-description %}
-
-```
-
-
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Open SesameE - Order Confirmation</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body style="margin: 0; padding: 0;">
-    <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse;">
-        <tbody>
-            <tr>
-                <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse;">
-                    <tr>
-                        <td style="padding-top: 20px;padding-bottom: 40px;">
-                            <span>
-                                Order Number: <span style="color: #FBB040;">BSC1-1501</span>
-                            </span>
-                        </td>
-                        <td style="text-align:right;padding-top: 20px;padding-bottom: 40px;">
-                            2020-10-27
-                        </td>
-                    </tr>
-                </table>
-            </tr>
-            <tr>
-                <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse;">
-                    <tbody>
-                        <tr>
-                            <td style="padding-left:15px;padding-top: 10px;padding-bottom: 10px;border-bottom: 1px solid #a6a6a6;">Item</td>
-                            <td style="border-bottom: 1px solid #a6a6a6;"></td>
-                            <td style="text-align: center;border-bottom: 1px solid #a6a6a6;">Qty</td>
-                            <td style="text-align: center;border-bottom: 1px solid #a6a6a6;" width="80">Unit Price</td>
-                            <td style="text-align: right;border-bottom: 1px solid #a6a6a6;">Subtotal</td>
-                        </tr>
-                            <tr>
-                                <td style="text-align: center;padding-top: 10px;padding-bottom: 10px;border-bottom: 1px solid #a6a6a6;">
-                                    <img src="https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg"
-                                         width="65" height="65" />
-                                </td>
-                                <td style="text-align: center;border-bottom: 1px solid #a6a6a6;">
-                                    
-                                </td>
-                                <td style="text-align: center;border-bottom: 1px solid #a6a6a6;">
-                                    2
-                                </td>
-                                <td style="text-align: center;border-bottom: 1px solid #a6a6a6;">$0.01</td>
-                                <td style="text-align: right;border-bottom: 1px solid #a6a6a6;">$0.02</td>
-                            </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td style="padding-top: 30px;text-align: left;font-weight: bold;">Subtotal</td>
-                            <td></td>
-                            <td style="text-align: right;padding-top: 30px;font-weight: bold;">$0.02</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td style="padding-top: 5px;text-align:left;font-weight: bold;">Shipping</td>
-                            <td></td>
-                            <td style="text-align: right;padding-top: 5px;font-weight: bold;">$0.00</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td></td>
-                            <td style="padding-top: 30px;text-align:left;font-weight: bold;color: #FBB040;font-size: 20px;padding-bottom: 20px;">Total</td>
-                            <td></td>
-                            <td style="text-align: right;padding-top: 30px;font-weight: bold;color: #FBB040;font-size: 20px;padding-bottom: 20px;">$0.02</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </tr>
-            <tr>
-                <table align="center" border="0" cellpadding="0" cellspacing="0" width="640" style="border-collapse: collapse;background: #F2F2F2;">
-                    <tr>
-                        <td style="padding-left: 10px;padding-top: 6px;padding-bottom: 6px;">
-                            <strong>Shipping Address</strong>
-                        </td>
-                        <td style="padding-left: 150px;"><strong>Shipping Method</strong></td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 10px;padding-top: 2px;padding-bottom: 2px;"></td>
-                        <td style="padding-left: 150px;"> <br /> </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 10px;padding-top: 2px;padding-bottom: 2px;"></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 10px;padding-top: 2px;padding-bottom: 2px;">,  </td>
-                    </tr>
-                    <tr>
-                        <td style="padding-left: 10px;padding-top: 2px;padding-bottom: 2px;"></td>
-                    </tr>
-                   </table>
-            </tr>
-        </tbody>
-    </table>
-</body>
-
-</html>
-
-```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
