@@ -2425,3 +2425,162 @@ comparing to normal line item in the merchant order object.
             }
 ```
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/search/customerorders" %}
+{% api-method-summary %}
+Search customer order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+this search has a default filter which is set to micro merchant id
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "total": 2,
+    "hits": [
+        {
+            "order_id": "d0787200-5aa1-4848-ba47-d90eefedbd5d",
+            "user_id": "mjiang2000@gmail.com",
+            "jielong_id": "4c65b551-365c-4d17-a136-86b0bfee8b27",
+            "email": "mjiang2000@gmail.com",
+            "user_name": null,
+            "micro_merchant_id": "ZEMBC",
+            "micro_merchant_name": "mjiang2000@gmail.com",
+            "merchant_id": "pennystore",
+            "merchant_name": "Penny Store",
+            "line_items": [
+                {
+                    "bcin": "SAMUVRY",
+                    "sku": null,
+                    "title": null,
+                    "quantity": 2,
+                    "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
+                    "list_price": 0.01,
+                    "sale_price": null,
+                    "merchant_id": "pennystore",
+                    "tax_code": "regular",
+                    "weight": 0.0
+                }
+            ],
+            "base_amount": 0.02,
+            "shipping_method": null,
+            "shipping_method_name": null,
+            "shipping_method_description": null,
+            "shipping_amount": 0.0,
+            "total_amount": 0.02,
+            "billing_address": null,
+            "shipping_address": null,
+            "created_at": "2020-10-27T16:16:45.4414159Z",
+            "updated_at": "2020-10-27T16:18:54.4878575Z",
+            "status": "new",
+            "payment_id": null,
+            "payment_gateway": null,
+            "payment_provider": null,
+            "order_number": "BSC1-1501",
+            "notes": null,
+            "bc_pay_enabled": false,
+            "refunded": false,
+            "id": "d0787200-5aa1-4848-ba47-d90eefedbd5d",
+            "document_type": "order",
+            "_etag": "\"020060a7-0000-0200-0000-5f9848710000\"",
+            "_rid": "dhoXAO3AhMqzBAAAAAAAAA==",
+            "_self": "dbs/dhoXAA==/colls/dhoXAO3AhMo=/docs/dhoXAO3AhMqzBAAAAAAAAA==/",
+            "_attachments": "attachments/",
+            "_lsn": 7155340,
+            "_ts": 1603815537
+        },
+        {
+            "order_id": "3cd78d1e-fe4b-4807-b80a-3262c835cf25",
+            "user_id": "mjiang2000@gmail.com",
+            "jielong_id": "3cf5ae93-1028-40e7-9f21-96f66551f3ef",
+            "email": "mjiang2000@gmail.com",
+            "user_name": "Jack Jiang Gmail3",
+            "micro_merchant_id": "ZEMBC",
+            "micro_merchant_name": "mjiang2000@gmail.com",
+            "merchant_id": "pennystore",
+            "merchant_name": "Penny Store",
+            "line_items": [
+                {
+                    "bcin": "SAMUVRY",
+                    "sku": null,
+                    "title": null,
+                    "quantity": 1,
+                    "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
+                    "list_price": 0.01,
+                    "sale_price": null,
+                    "merchant_id": "pennystore",
+                    "tax_code": "regular",
+                    "weight": 0.0
+                }
+            ],
+            "base_amount": 0.01,
+            "shipping_method": null,
+            "shipping_method_name": null,
+            "shipping_method_description": null,
+            "shipping_amount": 0.0,
+            "total_amount": 0.01,
+            "billing_address": null,
+            "shipping_address": null,
+            "created_at": "2020-10-31T01:31:39.824619Z",
+            "updated_at": "2020-10-31T01:34:45.1475653Z",
+            "status": "cancelled",
+            "payment_id": null,
+            "payment_gateway": null,
+            "payment_provider": null,
+            "order_number": "BSC1-1531",
+            "notes": null,
+            "bc_pay_enabled": false,
+            "refunded": false,
+            "id": "3cd78d1e-fe4b-4807-b80a-3262c835cf25",
+            "document_type": "order",
+            "_etag": "\"b6009835-0000-0200-0000-5f9cbf3b0000\"",
+            "_rid": "dhoXAO3AhMrsBAAAAAAAAA==",
+            "_self": "dbs/dhoXAA==/colls/dhoXAO3AhMo=/docs/dhoXAO3AhMrsBAAAAAAAAA==/",
+            "_attachments": "attachments/",
+            "_lsn": 7371222,
+            "_ts": 1604108091
+        }
+    ]
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+```text
+{
+    "keyword":"",
+    "size":50,
+    "from":0,
+    "filters": [
+         {
+            "field":"status",
+            "value":"submitted|new",
+            "option":"terms"
+        }
+    ]
+}
+```
+
