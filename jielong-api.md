@@ -1930,7 +1930,7 @@ micro merchant id
 {% endapi-method-path-parameters %}
 
 {% api-method-headers %}
-{% api-method-parameter name="Authorization" type="string" required=false %}
+{% api-method-parameter name="Authorization" type="string" required=true %}
 bearer token
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
