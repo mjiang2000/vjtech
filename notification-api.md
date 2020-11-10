@@ -209,3 +209,48 @@ Request Body
 }
 ```
 
+{% api-method method="post" host="https://us-central1-beeshop-dev.cloudfunctions.net/api" path="/notification/unregisterinappnotification" %}
+{% api-method-summary %}
+Unregister in app group notification
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+firebase id token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "status": "ok"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request Body
+
+```text
+{
+    "group_id":"u7zCtDv5dD5dzSQoywcq",
+    "user_id":"mjiang2000@gmail.com"
+}
+```
+
+
+
