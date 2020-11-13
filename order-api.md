@@ -1850,6 +1850,16 @@ Bearer token
 }
 ```
 {% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=422 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+Invalid coupon code
+```
+{% endapi-method-response-example %}
 {% endapi-method-response %}
 {% endapi-method-spec %}
 {% endapi-method %}
