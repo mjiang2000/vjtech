@@ -937,7 +937,8 @@ jielong id. if order id is not generated, use jielong id to create a new order
             "after_change":"9",
             "change_reason": "price_adjusted"
         }
-    ]
+    ],
+    "coupon_log":"coupon change message"
 }
 ```
 {% endapi-method-response-example %}
