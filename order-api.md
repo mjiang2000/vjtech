@@ -1651,3 +1651,206 @@ reference\_id: payment\_id\(paid\), order\_amendment\_id\(refunded\)
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/cancel" %}
+{% api-method-summary %}
+Cancel order
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-query-parameters %}
+{% api-method-parameter name="order\_id" type="string" required=false %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+Status = cancelled
+{% endapi-method-response-example-description %}
+
+```
+{
+    "id": "3cd78d1e-fe4b-4807-b80a-3262c835cf25",
+    "_rid": "dhoXALwMwpf7BQAAAAAAAA==",
+    "_self": "dbs/dhoXAA==/colls/dhoXALwMwpc=/docs/dhoXALwMwpf7BQAAAAAAAA==/",
+    "_ts": 1604108086,
+    "_etag": "\"b600d932-0000-0200-0000-5f9cbf360000\"",
+    "order_id": "3cd78d1e-fe4b-4807-b80a-3262c835cf25",
+    "user_id": "mjiang2000@gmail.com",
+    "jielong_id": "3cf5ae93-1028-40e7-9f21-96f66551f3ef",
+    "email": "mjiang2000@gmail.com",
+    "user_name": "Jack Jiang Gmail3",
+    "micro_merchant_id": "ZEMBC",
+    "micro_merchant_name": "mjiang2000@gmail.com",
+    "merchant_id": "pennystore",
+    "merchant_name": "Penny Store",
+    "line_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": null,
+            "title": null,
+            "quantity": 1,
+            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
+            "list_price": 0.01,
+            "sale_price": null,
+            "merchant_id": "pennystore",
+            "tax_code": "regular",
+            "weight": 0.0
+        }
+    ],
+    "base_amount": 0.01,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
+    "shipping_amount": 0.0,
+    "total_amount": 0.01,
+    "billing_address": null,
+    "shipping_address": null,
+    "created_at": "2020-10-31T01:31:39.824619Z",
+    "updated_at": "2020-10-31T01:34:45.1475653Z",
+    "status": "cancelled",
+    "payment_id": null,
+    "payment_gateway": null,
+    "payment_provider": null,
+    "order_number": "BSC1-1531",
+    "notes": null,
+    "bc_pay_enabled": false,
+    "refunded": false,
+    "document_type": "order"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+{% api-method method="put" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/coupon/:code/{action}" %}
+{% api-method-summary %}
+Apply Coupon
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="action" type="string" required=false %}
+apply or remove
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="code" type="string" required=false %}
+coupon code
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "id": "e9faacc5-dc03-4cc2-a3e9-d8c6473b9951",
+    "_rid": "dhoXALwMwpddBgAAAAAAAA==",
+    "_self": "dbs/dhoXAA==/colls/dhoXALwMwpc=/docs/dhoXALwMwpddBgAAAAAAAA==/",
+    "_ts": 1605288791,
+    "_etag": "\"39000546-0000-0200-0000-5faec3570000\"",
+    "order_id": "e9faacc5-dc03-4cc2-a3e9-d8c6473b9951",
+    "user_id": "mjiang2000@gmail.com",
+    "jielong_id": "c071353b-3ee5-4c0f-9d8f-433e580bff5f",
+    "email": "mjiang2000@gmail.com",
+    "user_name": "Jack Jiang Gmail3",
+    "micro_merchant_id": "ZEMBC",
+    "micro_merchant_name": "mjiang2000@gmail.com",
+    "merchant_id": "pennystore",
+    "merchant_name": "Penny Store",
+    "line_items": [
+        {
+            "bcin": "SAMUVRY",
+            "sku": null,
+            "title": null,
+            "quantity": 5,
+            "image_url": "https://bc01dmedia.blob.core.windows.net/product-image-m/SAMUVRY-4991087345671-01.jpg",
+            "list_price": 8.64,
+            "sale_price": null,
+            "merchant_id": "pennystore",
+            "tax_code": "regular",
+            "weight": 0.0
+        }
+    ],
+    "base_amount": 43.2,
+    "shipping_method": null,
+    "shipping_method_name": null,
+    "shipping_method_description": null,
+    "shipping_amount": 0.0,
+    "total_amount": 42.2,
+    "billing_address": null,
+    "shipping_address": null,
+    "created_at": "2020-11-13T17:21:10.3730198Z",
+    "updated_at": "2020-11-13T17:33:08.9218814Z",
+    "status": "submitted",
+    "payment_id": null,
+    "payment_gateway": null,
+    "payment_provider": null,
+    "order_number": "BSC1-1629",
+    "notes": null,
+    "bc_pay_enabled": false,
+    "refunded": false,
+    "coupon": {
+        "code": "COUPON1",
+        "coupon_type": "fix_amount_over_min_value",
+        "coupon_description": "fix_amount_over_min_value",
+        "settings": [
+            {
+                "name": "min_order_total_before_tax",
+                "type": "number",
+                "value": "10"
+            },
+            {
+                "name": "discount_amount",
+                "type": "number",
+                "value": "1"
+            }
+        ],
+        "effective_date": null,
+        "expiration_date": null,
+        "one_time_use": true,
+        "applied": false,
+        "entitled_by": "mjiang2000@gmail.com",
+        "id": "COUPON1",
+        "document_type": "coupon",
+        "_etag": "\"39005040-0000-0200-0000-5faec0e10000\""
+    },
+    "coupon_discount_amount": 1.0,
+    "total_before_coupon_discount": 43.2,
+    "document_type": "order"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
