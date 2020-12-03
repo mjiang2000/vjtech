@@ -562,5 +562,87 @@ Request body
 }
 ```
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/wechatjwt" %}
+{% api-method-summary %}
+Get Wechat JWT
+{% endapi-method-summary %}
 
+{% api-method-description %}
+The jwt token expired in 24 hours
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="openid" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="access\_token" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "custom_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1qaWFuZzIwMDBAaG90bWFpbC5jb20iLCJnaXZlbl9uYW1lIjoiamFjayB3ZWNoYXQiLCJmYW1pbHlfbmFtZSI6ImppYW5nIiwic3ViIjoibWppYW5nMjAwMEBob3RtYWlsLmNvbSIsIm5iZiI6MTYwNzAxNjc4OCwiZXhwIjoxNjA3MTAzMTg0LCJpYXQiOjE2MDcwMTY3ODgsImlzcyI6Imh0dHA6Ly9iZWVzaG9wLmNoYXQiLCJhdWQiOiJodHRwOi8vbW9iaWxlLmJlc2hvcC5jb20ifQ.wQVE98zTTxVnE5dr3jPW8mcejtX3FStqhTth1467_WE"
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=401 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=404 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "nickname": "J.J",
+    "openid": "oNXh9uBuHSX5dO6BJ04OnEQW2eXI",
+    "unionid": "o5XWQv9iPJmj6PPz8Q13iNoTPOJQ",
+    "headimgurl": "https://thirdwx.qlogo.cn/mmopen/vi_32/sDYYvwoOpqFCe6wDm3MVGL7IiaMTEChwguH6c4RheQn8zEfytnuOibRWeCVFx6tNm7nTWllJweCjQYRa7qH7ku8A/132",
+    "email": "",
+    "given_name": "",
+    "family_name": ""
+}
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=412 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "nickname": "J.J",
+    "openid": "oNXh9uBuHSX5dO6BJ04OnEQW2eXI",
+    "unionid": "o5XWQv9iPJmj6PPz8Q13iNoTPOJQ",
+    "headimgurl": "https://thirdwx.qlogo.cn/mmopen/vi_32/sDYYvwoOpqFCe6wDm3MVGL7IiaMTEChwguH6c4RheQn8zEfytnuOibRWeCVFx6tNm7nTWllJweCjQYRa7qH7ku8A/132",
+    "email": "mjiang2000@hotmail.com",
+    "given_name": "jack wechat",
+    "family_name": "jiang"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
