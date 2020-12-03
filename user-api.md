@@ -627,7 +627,7 @@ The custom JWT token expired in 24 hours
 
 {% api-method-response-example httpCode=412 %}
 {% api-method-response-example-description %}
-
+return when email is not validated yet
 {% endapi-method-response-example-description %}
 
 ```
