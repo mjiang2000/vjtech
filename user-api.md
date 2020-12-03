@@ -568,7 +568,7 @@ Get Wechat JWT
 {% endapi-method-summary %}
 
 {% api-method-description %}
-The jwt token expired in 24 hours
+The custom JWT token expired in 24 hours
 {% endapi-method-description %}
 
 {% api-method-spec %}
