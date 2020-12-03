@@ -646,3 +646,51 @@ The custom JWT token expired in 24 hours
 {% endapi-method-spec %}
 {% endapi-method %}
 
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/wechatusersignup" %}
+{% api-method-summary %}
+Wechat User Signup
+{% endapi-method-summary %}
+
+{% api-method-description %}
+if response is 200, an email should be send to the given email address for verification.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="access\_token" type="string" required=true %}
+
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="openid" type="string" required=true %}
+
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+{
+    "status": "ok"
+}
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request body
+
+```text
+{
+    "email" : "mjiang2000@hotmail.com",
+    "given_name": "jack wechat",
+    "family_name": "jiang"
+}
+```
+
