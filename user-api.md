@@ -717,3 +717,49 @@ Request body
 }
 ```
 
+{% api-method method="get" host="https://bc01d-coreapi-apim.azure-api.net/user/v1" path="/wechatuseremailverify" %}
+{% api-method-summary %}
+Verify Wechat User email 
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-query-parameters %}
+{% api-method-parameter name="code" type="string" required=true %}
+verification code
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="union\_id" type="string" required=true %}
+union id
+{% endapi-method-parameter %}
+{% endapi-method-query-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+Your email is verified. You are all set to login beeshop with Wechat.
+```
+{% endapi-method-response-example %}
+
+{% api-method-response-example httpCode=403 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+Sorry we cannot verify your email. Either the link is expired or wrong verification code.
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
