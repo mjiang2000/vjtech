@@ -1438,7 +1438,7 @@ Invalid Input
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingmethod" %}
+{% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingmethod" %}
 {% api-method-summary %}
 Update order shipping method
 {% endapi-method-summary %}
