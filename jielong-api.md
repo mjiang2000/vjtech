@@ -6,7 +6,7 @@ Create a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-\*Is\_event only allow to be set when Jielong Is created \(post\)
+This endpoint allows you to create a new Jeilong
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -72,7 +72,6 @@ Cake successfully retrieved.
     "shipping_address": null,
     "billing_address": null,
     "status": "closed",
-    "is_event": false,
     "start_date": "2020-05-21T00:00:00Z",
     "end_date": "2020-05-25T16:33:27.2971201Z",
     "bc_pay_enabled": false,
@@ -184,7 +183,7 @@ Update a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-\*If Is\_event is true, updating start\_date, end\_date or jielong\_product\_list will be ignored
+
 {% endapi-method-description %}
 
 {% api-method-spec %}
