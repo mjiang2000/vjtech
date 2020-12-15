@@ -6,8 +6,6 @@ Create a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-This endpoint allows you to create a new Jeilong  
-  
 Is\_event only allow to be set when Jielong Is created \(post\)
 {% endapi-method-description %}
 
