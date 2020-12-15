@@ -6,7 +6,7 @@ Create a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Is\_event only allow to be set when Jielong Is created \(post\)
+\*Is\_event only allow to be set when Jielong Is created \(post\)
 {% endapi-method-description %}
 
 {% api-method-spec %}
@@ -184,7 +184,7 @@ Update a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-If Is\_event is true, updating start\_date, end\_date or jielong\_product\_list will be ignored
+\*If Is\_event is true, updating start\_date, end\_date or jielong\_product\_list will be ignored
 {% endapi-method-description %}
 
 {% api-method-spec %}
