@@ -1672,6 +1672,10 @@ bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="is\_event" type="string" required=false %}
+y/n \(default is n\)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="continuation\_token" type="string" required=false %}
 
 {% endapi-method-parameter %}
