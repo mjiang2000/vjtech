@@ -1640,9 +1640,6 @@ bearer token
     "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-7f835c4b-3e53-4823-bbbe-ae224382c73d-backup.png",
     "updated_at": "2020-10-19T18:11:40.0689603Z",
     "id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
-    "is_event": true,
-    "start_date": "2020-12-12T00:00:00",
-    "end_date": "2020-12-30T00:00:00",
     "document_type": "merchant_jielong_template"
 }
 ```
@@ -1675,10 +1672,6 @@ bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
-{% api-method-parameter name="is\_event" type="string" required=false %}
-y/n \(ignore this will return all\)
-{% endapi-method-parameter %}
-
 {% api-method-parameter name="continuation\_token" type="string" required=false %}
 
 {% endapi-method-parameter %}

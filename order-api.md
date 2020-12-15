@@ -105,6 +105,17 @@ jielong id. if order id is not generated, use jielong id to create a new order
 ```
 {% endapi-method-response-example %}
 
+{% api-method-response-example httpCode=412 %}
+{% api-method-response-example-description %}
+current system time is not within range of start/end date
+{% endapi-method-response-example-description %}
+
+```
+Jielong has not started yet.
+Jielong has ended already
+```
+{% endapi-method-response-example %}
+
 {% api-method-response-example httpCode=422 %}
 {% api-method-response-example-description %}
 
@@ -1438,7 +1449,7 @@ Invalid Input
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingmethod" %}
+{% api-method method="patch" host="https://bc01d-coreapi-apim.azure-api.net/order/v1" path="/order/shippingmethod" %}
 {% api-method-summary %}
 Update order shipping method
 {% endapi-method-summary %}
