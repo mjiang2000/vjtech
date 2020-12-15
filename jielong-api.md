@@ -72,6 +72,7 @@ Cake successfully retrieved.
     "shipping_address": null,
     "billing_address": null,
     "status": "closed",
+    "is_event": false,
     "start_date": "2020-05-21T00:00:00Z",
     "end_date": "2020-05-25T16:33:27.2971201Z",
     "bc_pay_enabled": false,
