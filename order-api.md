@@ -112,7 +112,7 @@ current system time is not within range of start/end date
 
 ```
 Jielong has not started yet.
-Jielong has ended already
+Jielong has ended already.
 ```
 {% endapi-method-response-example %}
 
