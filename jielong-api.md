@@ -184,7 +184,7 @@ Update a Jielong
 {% endapi-method-summary %}
 
 {% api-method-description %}
-
+If Is\_event is true, updating start\_date, end\_date or jielong\_product\_list will be ignored
 {% endapi-method-description %}
 
 {% api-method-spec %}
