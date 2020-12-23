@@ -2593,7 +2593,7 @@ Bearer token
 
 {% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/customerorders/print" %}
 {% api-method-summary %}
-Print orders aggregation
+Print customer orders aggregation
 {% endapi-method-summary %}
 
 {% api-method-description %}
