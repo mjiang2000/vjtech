@@ -1640,6 +1640,9 @@ bearer token
     "image": "https://bc01dmedia.blob.core.windows.net/jielong-image/template-7f835c4b-3e53-4823-bbbe-ae224382c73d-backup.png",
     "updated_at": "2020-10-19T18:11:40.0689603Z",
     "id": "7f835c4b-3e53-4823-bbbe-ae224382c73d",
+    "is_event": true,
+    "start_date": "2020-12-12T00:00:00",
+    "end_date": "2020-12-30T00:00:00",
     "document_type": "merchant_jielong_template"
 }
 ```
@@ -1672,6 +1675,10 @@ bearer token
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="is\_event" type="string" required=false %}
+y/n \(ignore this will return all\)
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="continuation\_token" type="string" required=false %}
 
 {% endapi-method-parameter %}
@@ -2580,6 +2587,55 @@ Bearer token
             "value":"submitted|new",
             "option":"terms"
         }
+    ]
+}
+```
+
+{% api-method method="post" host="https://bc01d-coreapi-apim.azure-api.net/merchant/v1" path="/merchant/:merchantId/customerorders/print" %}
+{% api-method-summary %}
+Print orders aggregation
+{% endapi-method-summary %}
+
+{% api-method-description %}
+
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="merchantId" type="string" required=true %}
+micro merchant id
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+
+{% api-method-headers %}
+{% api-method-parameter name="Authorization" type="string" required=false %}
+Bearer token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+html output
+{% endapi-method-response-example-description %}
+
+```
+content-type: text/html
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+Request body
+
+```text
+{
+    "order_list": [
+       "0b641194-31d9-4984-960d-79404c85dded",
+       "c89f3732-9e38-4739-b80d-48311cbec974"
     ]
 }
 ```
