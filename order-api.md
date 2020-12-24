@@ -111,8 +111,10 @@ current system time is not within range of start/end date
 {% endapi-method-response-example-description %}
 
 ```
-Jielong has not started yet.
-Jielong has ended already.
+{"code":"5005.1", "description":"Jielong has not started yet."}
+
+{"code":"5005.2", "description":"Jielong has ended already."}
+
 ```
 {% endapi-method-response-example %}
 
